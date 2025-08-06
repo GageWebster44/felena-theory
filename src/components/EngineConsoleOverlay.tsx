@@ -7,7 +7,7 @@ import FlashXP from './FlashXP';
 import XPRewardModal from './XPRewardModal';
 import { checkCashoutStatus } from '../utils/xpCashoutTrigger';
 import { logRewardClaim } from '../utils/rewardClaimLogger';
-import { getCurrentTier, estimatePayoutTime } from '../utils/progressMonitor';
+import { getCurrentTier, estimatePayoutTime } from '../utils/progressmonitor';
 
 type Props = {
   currentXP: number;
