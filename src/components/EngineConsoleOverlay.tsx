@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 import { checkCrateMilestone } from '../utils/crateTrigger';
@@ -7,7 +6,7 @@ import FlashXP from './FlashXP';
 import XPRewardModal from './XPRewardModal';
 import { checkCashoutStatus } from '../utils/xpCashoutTrigger';
 import { logRewardClaim } from '../utils/rewardClaimLogger';
-import { getCurrentTier, estimatePayoutTime } from '../utils/progressmonitor';
+import { getCurrentTier, estimatePayoutTime } from '../utils/progressmonitor'; // 👈 MUST BE EXACTLY LOWERCASE!
 
 type Props = {
   currentXP: number;
