@@ -1,13 +1,12 @@
-
 // EngineConsoleOverlay.tsx – Finalized XP HUD with glow, sound, crate, override
 
-import { useEffect, useState } from 'react';
-import { checkCrateMilestone } from '@/utils/crateTrigger';
-import { playCrateSound } from '@/utils/playCrateSound';
-import FlashXP from '@/components/FlashXP';
-import XPRewardModal from '@/components/XPRewardModal';
-import { checkCashoutStatus } from '@/utils/xpCashoutTrigger';
-import { logRewardClaim } from '@/utils/rewardClaimLogger';
+import { useState, useEffect } from 'react';
+import { checkCrateMilestone } from '../utils/crateTrigger';
+import { playCrateSound } from '../utils/playCrateSound';
+import FlashXP from './FlashXP';
+import XPRewardModal from './XPRewardModal';
+import { checkCashoutStatus } from '../utils/xpCashoutTrigger';
+import { logRewardClaim } from '../utils/rewardClaimLogger';
 
 type Props = {
   currentXP: number;
@@ -16,7 +15,12 @@ type Props = {
   logs: string[];
 };
 
-export default function EngineConsoleOverlay({ currentXP, averageXPGain, userId, logs }: Props) {
+export default function EngineConsoleOverlay({
+  currentXP,
+  averageXPGain,
+  userId,
+  logs
+}: Props) {
   const [override, setOverride] = useState(false);
   const [crateFlash, setCrateFlash] = useState(false);
   const [crateTier, setCrateTier] = useState<string | null>(null);
@@ -25,9 +29,8 @@ export default function EngineConsoleOverlay({ currentXP, averageXPGain, userId,
   useEffect(() => {
     const result = checkCrateMilestone(currentXP);
     if (result.triggered) {
-      playCrateSound(result.tier);
-      setCrateFlash(true);
       setCrateTier(result.tier);
+      setCrateFlash(true);
       setTimeout(() => setCrateFlash(false), 2000);
     }
 
@@ -52,16 +55,16 @@ export default function EngineConsoleOverlay({ currentXP, averageXPGain, userId,
         color: '#0f0',
         padding: '1rem',
         borderRadius: '12px',
-        width: '360px',
+        border: '2px solid #0f0',
         fontFamily: 'monospace',
         fontSize: '0.85rem',
         zIndex: 9999,
         boxShadow: '0 0 12px #0f0'
       }}>
-        <div><strong>💻 ENGINE CONSOLE</strong></div>
-        <div>🧠 Mode: {override ? 'OVERRIDE' : 'CRUISE'}</div>
-        <div>💰 XP: {currentXP.toLocaleString()}</div>
-        <div>⏱ Est. Payout ETA: {Math.ceil((1000 - currentXP) / averageXPGain * 30 / 60)} min</div>
+        <div><strong>🧠 ENGINE CONSOLE</strong></div>
+        <div>🎮 Mode: {override ? 'OVERRIDE' : 'CRUISE'}</div>
+        <div>⚡ XP: {currentXP.toLocaleString()}</div>
+        <div>⏳ Est. Payout ETA: {Math.ceil((1000 - currentXP) / averageXPGain * 30 / 60)} min</div>
 
         <div style={{
           marginTop: '0.75rem',
@@ -72,21 +75,20 @@ export default function EngineConsoleOverlay({ currentXP, averageXPGain, userId,
           borderRadius: '8px',
           border: '1px solid #0f0'
         }}>
-          {logs.slice(-6).reverse().map((log, i) => (
-            <div key={i}>▶ {log}</div>
+          {(logs || []).slice().reverse().map((log, i) => (
+            <div key={i}>{log}</div>
           ))}
         </div>
       </div>
 
       <FlashXP trigger={crateFlash} />
-      <XPRewardModal tier={crateTier} />
-      {showRedemption && (
-        <XPRewardModal
-          tier={'Max'}
-          onClaim={handleClaim}
-          onClose={() => setShowRedemption(false)}
-        />
-      )}
+
+      <XPRewardModal
+        tier={crateTier}
+        show={showRedemption}
+        onClose={() => setShowRedemption(false)}
+        onClaim={handleClaim}
+      />
     </>
   );
 }
