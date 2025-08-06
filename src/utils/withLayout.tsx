@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function withLayout(PageComponent: any) {
-  return function WrappedPage(props: any) {
+  return function WrappedPage(props: Props) {
     return (
       <>
         <Head>
@@ -16,10 +16,10 @@ export default function withLayout(PageComponent: any) {
 
         <div className={styles.crtShell}>
           <header className={styles.crtHeader}>
-            <span className={styles.crtTag}>🧠 FELENA ZONE ONLINE</span>
+            <span className={styles.crtTag}>FELENA ZONE ONLINE</span>
             <div className={styles.crtStats}>
-              <span>🆔 Operator</span>
-              <span>🔐 XP: LIVE</span>
+              <span>🧠 Operator</span>
+              <span>🎮 XP: LIVE</span>
               <span>📡 Status: ONLINE</span>
             </div>
           </header>
