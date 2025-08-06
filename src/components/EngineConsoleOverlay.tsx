@@ -1,12 +1,14 @@
 // EngineConsoleOverlay.tsx – Finalized XP HUD with glow, sound, crate, override
 
 import { useState, useEffect } from 'react';
+
 import { checkCrateMilestone } from '../utils/crateTrigger';
 import { playCrateSound } from '../utils/playCrateSound';
 import FlashXP from './FlashXP';
 import XPRewardModal from './XPRewardModal';
 import { checkCashoutStatus } from '../utils/xpCashoutTrigger';
 import { logRewardClaim } from '../utils/rewardClaimLogger';
+import { estimatePayoutTime } from '../utils/progressMonitor';
 
 type Props = {
   currentXP: number;
@@ -45,6 +47,8 @@ export default function EngineConsoleOverlay({
     setShowRedemption(false);
   };
 
+  const { etaText, nextTier } = estimatePayoutTime(currentXP, averageXPGain);
+
   return (
     <>
       <div style={{
@@ -64,7 +68,7 @@ export default function EngineConsoleOverlay({
         <div><strong>🧠 ENGINE CONSOLE</strong></div>
         <div>🎮 Mode: {override ? 'OVERRIDE' : 'CRUISE'}</div>
         <div>⚡ XP: {currentXP.toLocaleString()}</div>
-        <div>⏳ Est. Payout ETA: {Math.ceil((1000 - currentXP) / averageXPGain * 30 / 60)} min</div>
+        <div>⏳ Est. Payout ETA: {etaText} → Next: {nextTier || 'None'}</div>
 
         <div style={{
           marginTop: '0.75rem',
