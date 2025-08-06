@@ -1,0 +1,69 @@
+ .bootScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: black;
+  font-family: 'Orbitron', monospace;
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99;
+  position: relative;
+  overflow: hidden;
+}
+
+.bootScreen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.05),
+    rgba(0, 255, 0, 0.05) 1px,
+    transparent 2px,
+    transparent 3px
+  );
+  pointer-events: none;
+  animation: none ;
+}
+
+@keyframes flicker {
+  0%, 0% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.controls button {
+  background: none;
+  border: 1px solid #00ff99;
+  color: #00ff99;
+  font-family: 'Orbitron', monospace;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-shadow: 0 0 5px #00ff99;
+}
+
+.errorText {
+  color: red;
+  font-family: monospace;
+  text-shadow: 0 0 4px red;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.reboot {
+  animation: redFlash 0.5s;
+}
+
+@keyframes redFlash {
+  0% { background: black; }
+  100% { background: #220000; }
+}

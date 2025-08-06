@@ -1,0 +1,367 @@
+ /* Global CRT Styling */
+.crtScreen {
+  background: black;
+  color: #00ff99;
+  font-family: 'Orbitron', sans-serif;
+  padding: 2rem;
+  min-height: 100vh;
+  box-shadow: inset 0 0 15px #00ff99;
+  border: 3px solid #00ff99;
+  animation: none;
+}
+
+/* Layout Grids */
+.crtGridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.crtGridItem {
+  cursor: pointer;
+}
+
+/* Panel Tiles */
+.crtPanelTile {
+  border: 2px solid #00ff99;
+  background: #000;
+  padding: 1rem;
+  height: 200px;
+  box-shadow: 0 0 10px #00ff99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.crtPanelTile:hover {
+  background-color: #021;
+  box-shadow: 0 0 15px #00ff99;
+}
+.tileLabel {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.xpRequirement {
+  font-size: 0.9rem;
+  color: #ff4444;
+}
+
+/* Buttons + Inputs */
+.crtButton {
+  background: transparent;
+  border: 2px solid #00ff99;
+  color: #00ff99;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.crtButton:hover {
+  background: #00ff99;
+  color: #000;
+}
+.crtInput {
+  background: #111;
+  color: #0f0;
+  border: 1px solid #0f0;
+  padding: 0.4rem;
+  font-family: 'Orbitron', monospace;
+}
+
+.sparkFlash {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #00ff99 0%, transparent 80%);
+  opacity: 0.7;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  animation: sparkPulse 0.6s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+@keyframes sparkPulse {
+  0%   { transform: translate(-50%, -50%) scale(0.4); opacity: 0.9; }
+  50%  { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0; }
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+  color: #f0f;
+  text-shadow: 1px 0 red, -1px 0 blue;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+.scanlines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+  color: #f0f;
+  text-shadow: 1px 0 red, -1px 0 blue;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+.scanlines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .crtScreen h1,
+  .crtScreen h2,
+  .crtScreen h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .crtScreen p,
+  .crtScreen li {
+    font-size: 0.9rem !important;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .pre {
+    font-size: 0.75rem;
+  }
+
+  .mobileHide {
+    display: none !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ✅ SUCCESS = GREEN */
+.crtButton--success {
+  background-color: #00ff99;
+  border-color: #00ff99;
+  color: #000;
+}
+
+.crtButton--success:hover {
+  background-color: #33ffaa;
+  border-color: #33ffaa;
+}
+
+/* ⚠️ DANGER = RED */
+.crtButton--danger {
+  background-color: #ff0044;
+  border-color: #ff0044;
+  color: #fff;
+}
+
+.crtButton--danger:hover {
+  background-color: #ff3366;
+  border-color: #ff3366;
+}
+
+/* 🟫 NEUTRAL = GRAY */
+.crtButton--neutral {
+  background-color: #444;
+  border-color: #666;
+  color: #ccc;
+}
+
+.crtButton--neutral:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* XP History Tiers */
+.xpLogRow {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.tierMini  { background: #111; border-left: 4px solid #333; }
+.tierMinor { background: #071d0a; border-left: 4px solid #00ff99; }
+.tierMajor { background: #07182c; border-left: 4px solid #00c3ff; }
+.tierMega  { background: #2b1800; border-left: 4px solid #ff8800; }
+.tierMax   { background: #230011; border-left: 4px solid #ff0077; }
+
+* Offline Mode Visual Overlay */
+.offlineOverlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.offlineOverlay canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.offlineText {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Orbitron', monospace;
+  font-size: 1.5rem;
+  color: #ff4444;
+  text-shadow: 0 0 6px red;
+  transform: translateY(-50%);
+}
+
+* Shop Layout */
+.shopGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.shopCard {
+  background: #111;
+  padding: 1.2rem;
+  border: 2px solid #00ff99;
+  border-radius: 8px;
+  width: 260px;
+  box-shadow: 0 0 10px #00ff99;
+  transition: all 0.2s ease-in-out;
+}
+.shopCard:hover {
+  box-shadow: 0 0 16px #00ffcc;
+  transform: scale(1.02);
+}
+.shopDescription {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Game Room */
+.gameList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.gameCard {
+  background: #000;
+  border: 2px solid #00ff99;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+* Spark Ring Pulse FX */
+.sparkRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 110%;
+  border: 2px solid #00ff99;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px #00ff99;
+  animation: pulseRing 1.5s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes pulseRing {
+  0%   { transform: translate(-50%, -50%) scale(0.9); opacity: 0.6; }
+  50%  { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.6; }
+}
+
+/* Missions */
+.missionRow {
+  background: #0a0a0a;
+  padding: 0.8rem;
+  border: 1px solid #00ffff;
+  margin-bottom: 1rem;
+}
+
+/* Override / Dev Console Grid */
+.overrideGrid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.overrideCard {
+  background: #1a0000;
+  border: 2px solid #ff0044;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 240px;
+}
+.overrideLog {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #111;
+  border: 1px dashed #f00;
+}
+.flickerFX::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0,255,0,0.1), transparent 60%);
+  animation: flashFlicker 0.3s ease-in-out;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes flashFlicker {
+  0%   { opacity: 0.8; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 0; }
+}

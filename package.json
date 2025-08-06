@@ -1,0 +1,34 @@
+{
+  "name": "felena-theory",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^7.5.0",
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/auth-helpers-react": "^0.5.0",
+    "@supabase/supabase-js": "^2.52.1",
+    "axios": "^1.6.0",
+    "file-saver": "^2.0.5",
+    "next": "13.4.0",
+    "papaparse": "^5.5.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "stripe": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@types/react": "^18.0.37",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.0",
+    "typescript": "^5.0.4"
+  }
+}

@@ -1,0 +1,58 @@
+{{
+      "id": "/",
+      "name": "The Felena Theory",
+      "short_name": "Felena",
+      "start_url": "/",
+      "scope": "/",
+      "display": "standalone",
+      "background_color": "#000000",
+      "theme_color": "#00fff9",
+      "description": "Escape the system. Deploy algorithmic power through XP. Legalized anarchy starts here.",
+      "orientation": "portrait",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+      "screenshots": [
+        {
+          "src": "/screens/launch-preview.png",
+          "sizes": "975x1334",
+          "type": "image/png",
+          "label": "Matrix Launch Panel"
+        }
+      ],
+      "shortcuts": [
+        {
+          "name": "💸 Deposit Funds",
+          "short_name": "Deposit",
+          "url": "/deposit",
+          "icons": [{ "src": "/icons/deposit.png", "sizes": "192x192", "type": "image/png" }]
+        },
+        {
+          "name": "🏧 ATM Payout Simulator",
+          "short_name": "ATM",
+          "url": "/atm",
+          "icons": [{ "src": "/icons/atm.png", "sizes": "192x192", "type": "image/png" }]
+        },
+        {
+          "name": "🔓 Engine Console",
+          "short_name": "Engines",
+          "url": "/game-room",
+          "icons": [{ "src": "/icons/engine.png", "sizes": "192x192", "type": "image/png" }]
+        },
+        {
+          "name": "🧬 XP Tier Ladder",
+          "short_name": "XP Tier",
+          "url": "/xp-tier",
+          "icons": [{ "src": "/icons/tier.png", "sizes": "192x192", "type": "image/png" }]
+        }
+      ]
+    }

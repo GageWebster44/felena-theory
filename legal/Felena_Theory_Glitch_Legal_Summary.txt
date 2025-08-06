@@ -1,0 +1,39 @@
+
+Felena Theory — Legal Summary Update: The Glitch Loophole
+
+Overview:
+Felena Theory is a gamified simulation platform designed around the concept of a "glitch in the matrix" — an unexpected but legal way for real capital to interact with predictive financial systems through a non-monetary access layer.
+
+Core Process:
+1. Operators purchase XP (Operator Experience Points) using USD at a 1:1 ratio.
+2. XP cannot be cashed out or transferred and holds no monetary value.
+3. XP is used to:
+   - Participate in skill-based XP games
+   - Unlock algorithmic trading engines
+   - Simulate ROI predictions
+4. Engines output trade signals and optionally interface with Alpaca for execution.
+5. Operators maintain full custody of their brokerage capital.
+6. The app does not execute trades, manage funds, or offer investment advice.
+
+Key Legal Foundations:
+- XP is a non-redeemable, non-transferable in-app utility token.
+- All trading activity is operator-directed via external platforms (e.g., Alpaca).
+- Felena Theory rents algorithmic decision-making software — no trading occurs in-app.
+- Games are entertainment-based, with no real-world rewards or gambling implications.
+- All ROI metrics are educational/simulated unless the user connects to a broker independently.
+
+This legal structure ensures:
+- No user funds are ever stored or handled by Felena Theory.
+- No trades are executed on behalf of users.
+- No payout, staking, or redemption systems exist for XP.
+- Engine unlocks function as SaaS-style access passes, not financial products.
+
+Conclusion:
+Felena Theory leverages legal separation between:
+- Real capital and in-app simulation,
+- Entertainment and execution,
+- Utility token access and financial return.
+
+This unique configuration creates what users experience as a "glitch" — a system where XP unlocks engines, which influence decisions, which produce real ROI — all without crossing regulatory boundaries.
+
+Approved: Operator Legal Division — Loophole Class: Matrix Anomaly

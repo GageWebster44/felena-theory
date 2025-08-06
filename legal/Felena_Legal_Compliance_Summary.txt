@@ -1,0 +1,77 @@
+
+Felena Theory — Legal Compliance Summary
+----------------------------------------
+
+Overview:
+Felena Theory is an immersive, non-financial simulation platform that leverages a utility point system ("XP") to grant users access to educational tools, simulations, and algorithmic analysis modules. It is legally classified as a gamified simulation environment and does not qualify as a trading platform, broker, or financial advisory product.
+
+Core Legal Structure:
+- XP (Operator Experience Points) is a non-monetary, non-redeemable utility token.
+- USD can be exchanged for XP at a fixed rate (1 USD = 1 XP); however, XP cannot be withdrawn, transferred, traded, or redeemed for currency or financial products.
+- All in-app actions, including games, simulations, and unlocks, are XP-driven and entirely confined within the platform’s ecosystem.
+
+Key Modules and Their Legal Classifications:
+
+1. Game Room (CRT 3):
+   - XP-based simulations resembling slot machines, dice, and card games.
+   - No cash prizes or redemptions.
+   - Outcomes affect internal XP only.
+   - Classified as gamified progression under simulated conditions.
+
+2. Engine Grid (CRT 2):
+   - XP unlocks access to simulated algorithmic engines.
+   - Engines generate hypothetical ROI and prediction analytics.
+   - Engines DO NOT place trades or handle user brokerage accounts.
+   - Classed as simulation-only algorithmic access (education and research use).
+
+3. AI Simulator (CRT 4):
+   - XP-unlocked forecasting models.
+   - Operators input signal logic and market assumptions.
+   - Output is educational and non-executable.
+   - Simulates technical and sentiment-based behavior only.
+
+4. XP Shop (CRT 6):
+   - XP used to purchase boosts, engine access, crates, and cosmetics.
+   - No items confer financial gain or asset rights.
+   - No cash-to-value transfer is permitted.
+
+5. Override Panel (CRT 9):
+   - Admin/test-only screen to inject XP or force-simulate system states.
+   - Used strictly for internal development or QA purposes.
+   - All overrides are logged and tracked.
+
+6. Anomaly Radar (CRT 5):
+   - Detects market behavior patterns (e.g., spoofing).
+   - Outputs educational alerts only.
+   - No automated response or trade execution.
+
+7. Live Feed (CRT 1):
+   - Displays real-time public market data.
+   - No trading functionality; for visualization and analysis only.
+
+8. Leaderboard (CRT 8):
+   - Rankings based on XP usage, win rates, simulator performance.
+   - No cash or prize-based outcomes.
+   - Used for gamified ranking.
+
+9. Settings + Profile Console (CRT 7):
+   - Customization of UX, autonomy preferences, and notification rules.
+   - No financial implications.
+
+Legal Summary:
+Felena Theory is:
+- Not a trading platform.
+- Not a wallet or brokerage service.
+- Not a provider of financial advice or recommendations.
+- Not offering securities, investment contracts, or tokens of value.
+
+Felena Theory is:
+- A simulation.
+- A gamified XP environment.
+- A progression-based unlock system for algorithmic modeling tools.
+- A user-operated experience that mimics financial logic for research, education, and experimentation only.
+
+Conclusion:
+Felena Theory operates entirely within legal bounds and maintains strict separation between its internal XP ecosystem and all forms of monetary value or investment activity. All user interactions are non-binding, non-financial, and simulate market behavior for operator education only.
+
+Approved for public release — Operator Legal Division

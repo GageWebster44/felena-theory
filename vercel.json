@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ],
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "Felena Theory",
+    "NEXT_PUBLIC_APP_URL": "https://www.FelenaTheory.com",
+    "NEXT_PUBLIC_SUPABASE_URL": "@next_public_supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@next_public_supabase_anon_key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase_service_role_key",
+    "NEXT_PUBLIC_ARCHITECT_ID": "@next_public_architect_id",
+    "NEXT_PUBLIC_POLYGON_API_KEY": "@next_public_polygon_api_key",
+    "ALPACA_API_KEY": "@alpaca_api_key",
+    "ALPACA_SECRET_KEY": "@alpaca_secret_key",
+    "ALPACA_BASE_URL": "@alpaca_base_url",
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "@next_public_stripe_publishable_key",
+    "STRIPE_SECRET_KEY": "@stripe_secret_key",
+    "STRIPE_WEBHOOK_SECRET": "@stripe_webhook_secret"
+  }
+}

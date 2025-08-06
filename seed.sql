@@ -1,0 +1,1 @@
+-- SQL schema: operators, xp_transactions, xp_boosts, referrals, access

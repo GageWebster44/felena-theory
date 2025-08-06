@@ -1,0 +1,11 @@
+:root {
+  --brand-green: #00ff99;
+  --brand-red: #ff4444;
+  --logo-url: url('/felena-brand-kit/felena-logo-final.png');
+}
+
+body {
+  background-color: #000;
+  color: #00ff99;
+  font-family: 'Orbitron', sans-serif;
+}
