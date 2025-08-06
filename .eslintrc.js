@@ -5,13 +5,12 @@ module.exports = {
     'next/core-web-vitals',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'prettier',
+    'plugin:react-hooks/recommended'
   ],
   plugins: ['@typescript-eslint', 'react'],
   rules: {
     '@typescript-eslint/no-unused-vars': ['warn'],
     'react/react-in-jsx-scope': 'off',
-    'no-console': 'warn',
-  },
+    'no-console': 'warn'
+  }
 };
