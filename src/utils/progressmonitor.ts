@@ -1,4 +1,4 @@
-// progressMonitor.ts – Tracks XP totals, progress to payout tiers
+// progressmonitor.ts – Tracks XP totals, progress to payout tiers
 
 const CRATE_TIERS = [
   { name: 'Mini', xp: 100 },
