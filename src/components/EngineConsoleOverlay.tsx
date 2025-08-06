@@ -1,18 +1,19 @@
-import { useState, useEffect } from 'react';
+// EngineConsoleOverlay.tsx – Finalized XP HUD with glow, sound, crate, override
 
+import { useState, useEffect } from 'react';
 import { checkCrateMilestone } from '../utils/crateTrigger';
 import { playCrateSound } from '../utils/playCrateSound';
 import FlashXP from './FlashXP';
 import XPRewardModal from './XPRewardModal';
 import { checkCashoutStatus } from '../utils/xpCashoutTrigger';
 import { logRewardClaim } from '../utils/rewardClaimLogger';
-import { getCurrentTier, estimatePayoutTime } from '../utils/progressmonitor'; // 👈 MUST BE EXACTLY LOWERCASE!
+import { getCurrentTier, estimatePayoutTime } from '../utils/progressmonitor';
 
 type Props = {
   currentXP: number;
   averageXPGain: number;
   userId: string;
-  logs: string[];
+  logs: any[]; // changed from string[] in case logs are objects
 };
 
 export default function EngineConsoleOverlay({
@@ -28,7 +29,7 @@ export default function EngineConsoleOverlay({
 
   useEffect(() => {
     const result = checkCrateMilestone(currentXP);
-    if (result.triggered) {
+    if (result?.triggered) {
       setCrateTier(result.tier);
       setCrateFlash(true);
       setTimeout(() => setCrateFlash(false), 2000);
@@ -78,7 +79,9 @@ export default function EngineConsoleOverlay({
           border: '1px solid #0f0'
         }}>
           {(logs || []).slice().reverse().map((log, i) => (
-            <div key={i}>{log}</div>
+            <div key={i}>
+              {typeof log === 'string' ? log : JSON.stringify(log)}
+            </div>
           ))}
         </div>
       </div>
