@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@utils/*": ["src/utils/*"],
+      "@lib/*": ["src/lib/*"],
+      "@lib/server/*": ["src/lib/server/*"],
+      "@server/*": ["src/lib/server/*"],
+      "@supabaseAdmin": ["src/lib/supabaseAdmin.ts"]
+    },
+    "types": ["node"]
+  },
+  "include": [
+    "src/utils/**/*",
+    "src/lib/**/*",
+    "pages/api/**/*"
+  ]
+}
