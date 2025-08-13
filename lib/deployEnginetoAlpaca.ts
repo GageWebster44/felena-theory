@@ -1,71 +1,54 @@
- // /lib/deployEngineToAlpaca.ts
+// src/lib/deployEnginetoAlpaca.ts
+// Logs deploy events to Supabase (server-side)
 
-import { createClient } from '@supabase/supabase-js';
-import { EngineName } from '@/types/engine-types';
-import { getAlpacaKeysForUser } from '@/utils/userUtils';
-import { initializeEngine } from '@/engines/engineRouter';
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+type DeployStatus = 'started' | 'completed' | 'failed';
 
-interface DeployParams {
-  engine: EngineName;       // 'jarvis' | 'snubnose' | 'synapse'
-  mode: 'live' | 'paper';   // Deployment target mode
-  xp: number;               // Amount of XP committed
+export type DeployEvent = {
+  user_id: string;
+  engine: string;
+  status: DeployStatus;
+  xp?: number;
+  meta?: Record<string, unknown>;
+};
+
+export type DeployResult = { ok: true } | { ok: false; error: string };
+
+function getSupabase(): SupabaseClient {
+  // Prefer service role for server inserts; fall back to public anon if needed.
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  if (!url || !key) {
+    throw new Error('Supabase environment variables are not set');
+  }
+
+  return createClient(url, key);
 }
 
-export async function deployEngineToAlpaca({ engine, mode, xp }: DeployParams) {
-  try {
-    const user = await supabase.auth.getUser();
-    if (!user || !user.data.user) throw new Error('Not authenticated');
-
-    const userId = user.data.user.id;
-
-    // Fetch user's Alpaca keys (already linked account required)
-    const { apiKey, secretKey } = await getAlpacaKeysForUser(userId, mode);
-    if (!apiKey || !secretKey) throw new Error('Missing Alpaca credentials');
-
-    // Load engine logic from /engines/
-    const tradingBot = initializeEngine(engine, {
-      apiKey,
-      secretKey,
-      paper: mode === 'paper',
-      userId,
-    });
-
-    // Start the engine (internally runs live or paper trades)
-    await tradingBot.start();
-
-    // Log deployment
+export default async function deployEnginetoAlpaca(evt: DeployEvent): Promise<DeployResult> {
   try {
-    await supabase.from('engine_deployments').insert([
-  } catch (error) {
-    console.error('❌ Supabase error in deployEnginetoAlpaca.ts', error);
-  }
-      {
-        user_id: userId,
-        engine_name: engine,
-        mode,
-        xp_used: xp,
-        deployed_at: new Date().toISOString(),
-      }
-    ]);
+    const supabase = getSupabase();
 
-    // Optionally deduct XP here if using app-based XP balance
-  try {
-    await supabase.rpc('deduct_xp', {
-  } catch (error) {
-    console.error('❌ Supabase error in deployEnginetoAlpaca.ts', error);
-  }
-      uid: userId,
-      amount: xp
-    });
+    const { error } = await supabase.from('engine_deployments').insert([
+      {
+        user_id: evt.user_id,
+        engine: evt.engine,
+        status: evt.status,
+        xp: evt.xp ?? 0,
+        meta: evt.meta ?? {},
+        created_at: new Date().toISOString(),
+      },
+    ]);
 
-    return true;
-  } catch (err) {
-    console.error('[Engine Deploy Failed]', err);
-    throw err;
-  }
+    if (error) {
+      return { ok: false, error: error.message };
+    }
+
+    return { ok: true };
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    return { ok: false, error: message };
+  }
 }

@@ -1,30 +1,79 @@
-// lib/withXPGuard.tsx
-import { useEffect, useState } from 'react'
-import { useUser, useSupabaseClient } from '@supabase/auth-helpers-react'
-import { useRouter } from 'next/router'
+// src/lib/withXPGuard.tsx
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { useUser, useSupabaseClient } from '@supabase/auth-helpers-react';
 
-export default function withXPGuard(Component, requiredXP) {
-  return function Wrapped() {
-    const user = useUser()
-    const router = useRouter()
-    const supabase = useSupabaseClient()
-    const [xp, setXP] = useState(0)
+type GuardedProps = Record<string, unknown>;
 
-    useEffect(() => {
-      if (!user) return
-      const fetchXP = async () => {
-  try {
-    const { data } = await supabase.from('xp_log').select('amount').eq('user_id', user.id)
-  } catch (error) {
-    console.error('❌ Supabase error in withXPGuard.tsx', error);
-  }
-        const totalXP = data?.reduce((acc, row) => acc + row.amount, 0) || 0
-        setXP(totalXP)
-        if (totalXP < requiredXP) router.push('/locked')
-      }
-      fetchXP()
-    }, [user])
+/**
+ * HOC that requires a user to have at least `requiredXP` total XP.
+ * If they don't, it redirects to /locked.
+ */
+export default function withXPGuard<P extends GuardedProps>(
+  Wrapped: React.ComponentType<P>,
+  requiredXP: number
+) {
+  function Guarded(props: P) {
+    const router = useRouter();
+    const user = useUser();
+    const supabase = useSupabaseClient();
+    const [loading, setLoading] = useState(true);
+    const [xp, setXp] = useState(0);
 
-    return xp >= requiredXP ? <Component /> : <p>🔒 Accessing restricted simulation...</p>
-  }
+    useEffect(() => {
+      let cancelled = false;
+
+      const run = async () => {
+        try {
+          // Wait for auth
+          if (!user) {
+            if (!cancelled) setLoading(false);
+            return;
+          }
+
+          // NOTE: drop the generic on `.from(...)` to avoid TS2558.
+          // Cast the result rows to the shape we need.
+          const { data, error } = await supabase
+            .from('xp_log')
+            .select('amount')
+            .eq('user_id', user.id);
+
+          if (error) throw error;
+
+          const total = ((data ?? []) as Array<{ amount: number }>)
+            .reduce((sum, r) => sum + (r?.amount ?? 0), 0);
+
+          if (!cancelled) {
+            setXp(total);
+            setLoading(false);
+
+            if (total < requiredXP) {
+              // Redirect if below threshold
+              router.push('/locked').catch(() => {});
+            }
+          }
+        } catch (err) {
+          console.error('Supabase error in withXPGuard.tsx:', err);
+          if (!cancelled) setLoading(false);
+        }
+      };
+
+      run();
+      return () => {
+        cancelled = true;
+      };
+    }, [user, supabase, router, requiredXP]);
+
+    // Simple gate UI while checking / or if redirecting
+    if (loading || !user || xp < requiredXP) {
+      return <p>Accessing restricted simulation…</p>;
+    }
+
+    // Authorized — render wrapped component with original props
+    return <Wrapped {...props} />;
+  }
+
+  Guarded.displayName = `withXPGuard(${Wrapped.displayName || Wrapped.name || 'Component'})`;
+
+  return Guarded;
 }
