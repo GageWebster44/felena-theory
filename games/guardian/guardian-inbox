@@ -1,0 +1,80 @@
+import { useEffect, useState } from 'react';
+import supabase from '@/utils/supabaseClient';
+import styles from '@/styles/crtLaunch.module.css';
+import { format } from 'date-fns';
+import { downloadCSV } from '@/utils/exportCSV';
+import RouteGuard from '@/components/RouteGuard';
+
+interface GuardianConsent {
+  id: string;
+  user_id: string;
+  name: string;
+  email: string;
+  relation: string;
+  timestamp: string;
+  agreed: boolean;
+}
+
+function GuardianInboxContent() {
+  const [consents, setConsents] = useState<GuardianConsent[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      const { data } = await supabase
+        .from('guardian_consent')
+        .select('*')
+        .order('timestamp', { ascending: false });
+
+      setConsents(data || []);
+      setLoading(false);
+    })();
+  }, []);
+
+  const handleExport = () => downloadCSV(consents, 'guardian_consent_log');
+
+  return (
+    <div className={styles.crtScreen}>
+      <h1>📬 GUARDIAN INBOX</h1>
+      <p>Submitted parental consents and child onboarding approvals.</p>
+      <button className={styles.crtButton} onClick={handleExport}>📤 Export CSV</button>
+
+      {loading ? (
+        <p>Loading...</p>
+      ) : consents.length === 0 ? (
+        <p>📭 No guardian entries found.</p>
+      ) : (
+        <ul style={{ marginTop: '2rem' }}>
+          {consents.map((entry) => (
+            <li
+              key={entry.id}
+              style={{
+                marginBottom: '1.5rem',
+                padding: '1rem',
+                border: '1px solid #0ff',
+                borderRadius: '6px',
+                background: '#111',
+              }}
+            >
+              <p><strong>Name:</strong> {entry.name}</p>
+              <p><strong>Email:</strong> {entry.email}</p>
+              <p><strong>Relation:</strong> {entry.relation}</p>
+              <p><strong>Consent:</strong> {entry.agreed ? '✅ Agreed' : '❌ Not Agreed'}</p>
+              <p style={{ fontSize: '0.8rem', color: '#888' }}>
+                <strong>Timestamp:</strong> {format(new Date(entry.timestamp), 'PPpp')}
+              </p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+export default function GuardianInboxPage() {
+  return (
+    <RouteGuard allowedRoles={['admin', 'developer']}>
+      <GuardianInboxContent />
+    </RouteGuard>
+  );
+}
