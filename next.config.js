@@ -1,30 +1,50 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
+  // Public env used across the app
   env: {
     NEXT_PUBLIC_APP_NAME: 'Felena Theory',
-    NEXT_PUBLIC_APP_URL: 'https://www.FelenaTheory.com',
+    NEXT_PUBLIC_APP_URL: 'https://www.felenatheory.com',
   },
 
+  // Allow images from the services you use
   images: {
     domains: [
-      'kmalqsuhphgfngizt.supabase.co',     // Supabase storage
-      'cdn.felenatheory.com',              // Optional hosted CDN
-      'avatars.githubusercontent.com',     // GitHub avatars
-      'images.unsplash.com',               // Stock imagery
+      // Supabase storage (adjust to your actual project ref if different)
+      'kmalqsuphpgfngizt.supabase.co',
+      // Optional CDN you mentioned
+      'cdn.felenatheory.com',
+      // GitHub avatars
+      'avatars.githubusercontent.com',
+      // Stock imagery
+      'images.unsplash.com',
     ],
   },
 
+  // Simple redirects so people don't hit a non-route like /index
   async redirects() {
     return [
+      { source: '/index', destination: '/', permanent: false },
+      { source: '/home', destination: '/', permanent: true },
+    ];
+  },
+
+  // Baseline security headers (your middleware also hardens things)
+  async headers() {
+    return [
       {
-        source: '/home',
-        destination: '/',
-        permanent: true,
+        source: '/:path*',
+        headers: [
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), payment=()',
+          },
+        ],
       },
     ];
   },

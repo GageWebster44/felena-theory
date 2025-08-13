@@ -1,0 +1,1470 @@
+Internal/[id].tsx(48,1): error TS1109: Expression expected.
+Internal/[id].tsx(49,1): error TS2657: JSX expressions must have one parent element.
+Internal/[id].tsx(87,3): error TS1128: Declaration or statement expected.
+Internal/engine-grid.tsx(44,1): error TS1109: Expression expected.
+Internal/engine-grid.tsx(45,1): error TS2657: JSX expressions must have one parent element.
+Internal/engine-grid.tsx(94,3): error TS1128: Declaration or statement expected.
+legal/felena-nda-mutual.ts(1,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(1,8): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(2,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(2,23): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(3,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(3,25): error TS1005: ',' expected.
+legal/felena-nda-mutual.ts(5,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/felena-nda-mutual.ts(5,6): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(5,28): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(5,39): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(5,49): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(5,52): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(5,55): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(5,63): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(5,68): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(5,71): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(7,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(7,8): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,3): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,11): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,21): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,29): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,39): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,45): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,49): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,54): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,57): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,61): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(8,78): error TS1005: ']' expected.
+legal/felena-nda-mutual.ts(8,83): error TS1128: Declaration or statement expected.
+legal/felena-nda-mutual.ts(9,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(9,11): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(9,17): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(9,38): error TS1005: ',' expected.
+legal/felena-nda-mutual.ts(10,2): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(10,10): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(14,12): error TS1005: ']' expected.
+legal/felena-nda-mutual.ts(14,16): error TS1128: Declaration or statement expected.
+legal/felena-nda-mutual.ts(15,9): error TS1005: ',' expected.
+legal/felena-nda-mutual.ts(15,20): error TS1005: ',' expected.
+legal/felena-nda-mutual.ts(15,23): error TS1005: ',' expected.
+legal/felena-nda-mutual.ts(15,30): error TS1005: ',' expected.
+legal/felena-nda-mutual.ts(16,2): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(16,12): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(18,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,9): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,13): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,23): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,27): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,32): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,35): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,52): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(18,58): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(18,60): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(18,83): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(18,92): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(20,1): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(22,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(24,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,5): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,13): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,20): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,23): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,32): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,45): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,61): error TS1005: '(' expected.
+legal/felena-nda-mutual.ts(24,65): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(24,73): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(24,76): error TS1005: ')' expected.
+legal/felena-nda-mutual.ts(24,87): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,152): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(24,158): error TS1435: Unknown keyword or identifier. Did you mean 'static'?
+legal/felena-nda-mutual.ts(24,168): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,179): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,189): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,193): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(24,211): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(24,219): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(26,1): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(26,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(26,15): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(26,18): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,1): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(28,2): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,26): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(28,28): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,37): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,41): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+legal/felena-nda-mutual.ts(28,44): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,48): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,85): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,98): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,116): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,129): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,143): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,158): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,179): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,213): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(28,217): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,223): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,235): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,247): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(28,257): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(30,1): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(30,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(32,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(32,6): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(32,12): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(33,5): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(33,10): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(33,19): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(33,54): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(34,5): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(34,10): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(34,14): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(34,17): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(34,26): error TS1005: '(' expected.
+legal/felena-nda-mutual.ts(34,30): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(35,5): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(35,10): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(35,14): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(35,23): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(35,26): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(35,32): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(35,40): error TS1435: Unknown keyword or identifier. Did you mean 'with out'?
+legal/felena-nda-mutual.ts(35,48): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(35,54): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(37,1): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(37,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(39,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(39,14): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(39,26): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(39,31): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(39,35): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(39,43): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,5): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(40,10): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,13): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,16): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,24): error TS1128: Declaration or statement expected.
+legal/felena-nda-mutual.ts(40,31): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,41): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,49): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,52): error TS1435: Unknown keyword or identifier. Did you mean 'default'?
+legal/felena-nda-mutual.ts(40,58): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,61): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(40,65): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(41,5): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(41,10): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(41,13): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(41,23): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(41,26): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(41,28): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(41,34): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(42,5): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(42,10): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(42,13): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(42,27): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(42,37): error TS1435: Unknown keyword or identifier. Did you mean 'with out'?
+legal/felena-nda-mutual.ts(42,45): error TS1435: Unknown keyword or identifier. Did you mean 'accessor'?
+legal/felena-nda-mutual.ts(42,52): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(42,55): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(44,1): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(44,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(46,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/felena-nda-mutual.ts(46,6): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,16): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,39): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(46,43): error TS1005: '(' expected.
+legal/felena-nda-mutual.ts(46,45): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(46,52): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(46,55): error TS1005: ')' expected.
+legal/felena-nda-mutual.ts(46,57): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(46,63): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,68): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,72): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,82): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,87): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,90): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,96): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,109): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,121): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(46,124): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(48,1): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(48,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(48,11): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(50,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(50,19): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(50,32): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(50,44): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(50,49): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(50,52): error TS1435: Unknown keyword or identifier. Did you mean 'return'?
+legal/felena-nda-mutual.ts(50,61): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(50,64): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(52,1): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(52,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(54,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,4): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,12): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,15): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,25): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,32): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,36): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,44): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(54,52): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(56,1): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(56,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(58,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/felena-nda-mutual.ts(58,6): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,16): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,22): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,25): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,34): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,37): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,41): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,46): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,49): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,53): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(58,70): error TS1005: ']' expected.
+legal/felena-nda-mutual.ts(58,75): error TS1128: Declaration or statement expected.
+legal/felena-nda-mutual.ts(58,76): error TS1128: Declaration or statement expected.
+legal/felena-nda-mutual.ts(60,4): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(62,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/felena-nda-mutual.ts(62,6): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(62,15): error TS1435: Unknown keyword or identifier. Did you mean 'const itutes'?
+legal/felena-nda-mutual.ts(62,27): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(62,31): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(62,38): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(62,48): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(62,52): error TS1435: Unknown keyword or identifier. Did you mean 'super sedes'?
+legal/felena-nda-mutual.ts(62,63): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(62,67): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(64,1): error TS1127: Invalid character.
+legal/felena-nda-mutual.ts(66,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(66,4): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(66,25): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(66,33): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(66,38): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(66,52): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(66,68): error TS1005: ';' expected.
+legal/felena-nda-mutual.ts(66,72): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(66,87): error TS1003: Identifier expected.
+legal/felena-nda-mutual.ts(68,1): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(68,8): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(70,7): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(71,8): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(71,14): error TS1434: Unexpected keyword or identifier.
+legal/felena-nda-mutual.ts(73,12): error TS1005: ']' expected.
+legal/felena-nda-mutual.ts(73,16): error TS1128: Declaration or statement expected.
+legal/felena-nda-mutual.ts(75,14): error TS1005: ',' expected.
+legal/felena-nda-mutual.ts(76,12): error TS1005: ',' expected.
+legal/master_ip_license.ts(1,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(1,8): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(3,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(3,23): error TS1005: ';' expected.
+legal/master_ip_license.ts(3,27): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(3,40): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(3,49): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(5,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(5,25): error TS1005: ',' expected.
+legal/master_ip_license.ts(7,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/master_ip_license.ts(7,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(7,28): error TS1005: ';' expected.
+legal/master_ip_license.ts(7,32): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(7,45): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(7,54): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(7,76): error TS1127: Invalid character.
+legal/master_ip_license.ts(7,86): error TS1127: Invalid character.
+legal/master_ip_license.ts(7,89): error TS1005: ';' expected.
+legal/master_ip_license.ts(7,92): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(7,100): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(7,105): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(7,108): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,19): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,26): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,43): error TS1005: ';' expected.
+legal/master_ip_license.ts(9,48): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,56): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,85): error TS1005: ';' expected.
+legal/master_ip_license.ts(9,89): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,92): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(9,128): error TS1005: ';' expected.
+legal/master_ip_license.ts(9,149): error TS1127: Invalid character.
+legal/master_ip_license.ts(9,156): error TS1127: Invalid character.
+legal/master_ip_license.ts(9,159): error TS1003: Identifier expected.
+legal/master_ip_license.ts(10,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(10,26): error TS1005: ',' expected.
+legal/master_ip_license.ts(10,31): error TS1005: ',' expected.
+legal/master_ip_license.ts(10,34): error TS1005: ',' expected.
+legal/master_ip_license.ts(10,58): error TS1005: ',' expected.
+legal/master_ip_license.ts(10,73): error TS1127: Invalid character.
+legal/master_ip_license.ts(10,83): error TS1127: Invalid character.
+legal/master_ip_license.ts(12,1): error TS1127: Invalid character.
+legal/master_ip_license.ts(14,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(16,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,5): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,13): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,18): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,21): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,29): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,31): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,41): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,50): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,53): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,61): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,74): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,78): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,82): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,88): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(16,120): error TS1005: ';' expected.
+legal/master_ip_license.ts(16,142): error TS1005: ';' expected.
+legal/master_ip_license.ts(16,159): error TS1005: ';' expected.
+legal/master_ip_license.ts(16,177): error TS1005: ';' expected.
+legal/master_ip_license.ts(16,199): error TS1005: ';' expected.
+legal/master_ip_license.ts(16,219): error TS1127: Invalid character.
+legal/master_ip_license.ts(16,233): error TS1005: ',' expected.
+legal/master_ip_license.ts(16,244): error TS1127: Invalid character.
+legal/master_ip_license.ts(18,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(18,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(20,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(20,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(21,10): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,14): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,17): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,26): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,30): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,41): error TS1127: Invalid character.
+legal/master_ip_license.ts(21,42): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,44): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,57): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,69): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,72): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(21,76): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(22,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(22,10): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(22,13): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(22,17): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(22,30): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(22,42): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(22,53): error TS1005: '(' expected.
+legal/master_ip_license.ts(22,64): error TS1005: ';' expected.
+legal/master_ip_license.ts(22,67): error TS1005: ';' expected.
+legal/master_ip_license.ts(22,81): error TS1005: ')' expected.
+legal/master_ip_license.ts(23,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(23,10): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(23,13): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(23,18): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(23,29): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(23,41): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(23,44): error TS1435: Unknown keyword or identifier. Did you mean 'protected'?
+legal/master_ip_license.ts(23,52): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(23,73): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,78): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,83): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,89): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,94): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,97): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,105): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,111): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,115): error TS1005: ',' expected.
+legal/master_ip_license.ts(23,121): error TS1003: Identifier expected.
+legal/master_ip_license.ts(25,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/master_ip_license.ts(25,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(25,14): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(25,24): error TS1127: Invalid character.
+legal/master_ip_license.ts(25,26): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(25,31): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(25,37): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(25,44): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(25,47): error TS1435: Unknown keyword or identifier. Did you mean 'protected'?
+legal/master_ip_license.ts(25,55): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(25,64): error TS1127: Invalid character.
+legal/master_ip_license.ts(25,65): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(27,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(27,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(29,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/master_ip_license.ts(29,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(29,16): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(29,21): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(29,25): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(30,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(30,10): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(30,22): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(30,30): error TS1435: Unknown keyword or identifier. Did you mean 'public'?
+legal/master_ip_license.ts(30,39): error TS1435: Unknown keyword or identifier. Did you mean 'unknown'?
+legal/master_ip_license.ts(30,45): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(30,48): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(30,53): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(31,10): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,22): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,36): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,46): error TS1435: Unknown keyword or identifier. Did you mean 'with out'?
+legal/master_ip_license.ts(31,54): error TS1435: Unknown keyword or identifier. Did you mean 'accessor'?
+legal/master_ip_license.ts(31,61): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,64): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,68): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,79): error TS1127: Invalid character.
+legal/master_ip_license.ts(31,80): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(31,82): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(32,10): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,22): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,31): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,40): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,45): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,47): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,53): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,59): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(32,63): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(34,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(34,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(34,14): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,41): error TS1005: ';' expected.
+legal/master_ip_license.ts(36,55): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,60): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,63): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,67): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,77): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,84): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,87): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,93): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,112): error TS1005: '(' expected.
+legal/master_ip_license.ts(36,119): error TS1005: ')' expected.
+legal/master_ip_license.ts(36,128): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,132): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,137): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,141): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,150): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,158): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,167): error TS1127: Invalid character.
+legal/master_ip_license.ts(36,168): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,184): error TS1005: ';' expected.
+legal/master_ip_license.ts(36,202): error TS1005: ';' expected.
+legal/master_ip_license.ts(36,216): error TS1005: ';' expected.
+legal/master_ip_license.ts(36,239): error TS1005: ';' expected.
+legal/master_ip_license.ts(36,251): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,261): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,267): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,274): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,278): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,288): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,297): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,300): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,307): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(36,320): error TS1003: Identifier expected.
+legal/master_ip_license.ts(38,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,5): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,15): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,22): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,26): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,33): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,68): error TS1005: ';' expected.
+legal/master_ip_license.ts(38,77): error TS1005: ';' expected.
+legal/master_ip_license.ts(38,88): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,99): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,106): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,113): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(38,124): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(40,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(40,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(42,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/master_ip_license.ts(42,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,16): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,21): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,25): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,31): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,38): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,44): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,48): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,56): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,59): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,66): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,72): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,112): error TS1005: ';' expected.
+legal/master_ip_license.ts(42,118): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,131): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,140): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(42,147): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(44,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(44,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(46,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/master_ip_license.ts(46,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(46,16): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(46,38): error TS1005: ';' expected.
+legal/master_ip_license.ts(47,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(47,10): error TS1435: Unknown keyword or identifier. Did you mean 'for'?
+legal/master_ip_license.ts(47,16): error TS1005: ';' expected.
+legal/master_ip_license.ts(47,22): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(47,27): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(47,31): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,5): error TS1127: Invalid character.
+legal/master_ip_license.ts(48,10): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,15): error TS1005: ';' expected.
+legal/master_ip_license.ts(48,21): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,26): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,30): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,42): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,45): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,49): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,69): error TS1127: Invalid character.
+legal/master_ip_license.ts(48,71): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(48,81): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+legal/master_ip_license.ts(50,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(50,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(50,11): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,20): error TS1005: ';' expected.
+legal/master_ip_license.ts(52,28): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,34): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,37): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,56): error TS1005: ';' expected.
+legal/master_ip_license.ts(52,64): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,68): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,77): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(52,113): error TS1005: ';' expected.
+legal/master_ip_license.ts(52,135): error TS1005: ';' expected.
+legal/master_ip_license.ts(54,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(54,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(56,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/master_ip_license.ts(56,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,16): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,22): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,25): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,34): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,37): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,67): error TS1005: ';' expected.
+legal/master_ip_license.ts(56,72): error TS1005: '(' expected.
+legal/master_ip_license.ts(56,76): error TS1005: ')' expected.
+legal/master_ip_license.ts(56,81): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,84): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,88): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,94): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,111): error TS1005: ';' expected.
+legal/master_ip_license.ts(56,118): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,121): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(56,131): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(58,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(58,4): error TS1005: ';' expected.
+legal/master_ip_license.ts(60,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,6): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,12): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,19): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,24): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,31): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,39): error TS1005: ';' expected.
+legal/master_ip_license.ts(60,49): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,75): error TS1005: ';' expected.
+legal/master_ip_license.ts(60,85): error TS1005: ';' expected.
+legal/master_ip_license.ts(60,89): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,97): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,103): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,109): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,112): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,121): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,124): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,154): error TS1005: ';' expected.
+legal/master_ip_license.ts(60,157): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,161): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(60,167): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(62,1): error TS1003: Identifier expected.
+legal/master_ip_license.ts(62,5): error TS1005: ';' expected.
+legal/master_ip_license.ts(64,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+legal/master_ip_license.ts(64,6): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+legal/master_ip_license.ts(64,9): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,13): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,20): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,30): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,38): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,42): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,50): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,60): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,76): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,80): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,98): error TS1005: ';' expected.
+legal/master_ip_license.ts(64,103): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,112): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,115): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,120): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,126): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,130): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(64,138): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(66,1): error TS1127: Invalid character.
+legal/master_ip_license.ts(68,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(68,4): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(70,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(70,5): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(70,13): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(70,18): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(70,32): error TS1005: ';' expected.
+legal/master_ip_license.ts(70,48): error TS1005: ';' expected.
+legal/master_ip_license.ts(70,52): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(70,67): error TS1003: Identifier expected.
+legal/master_ip_license.ts(72,1): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(72,8): error TS1434: Unexpected keyword or identifier.
+legal/master_ip_license.ts(73,5): error TS1434: Unexpected keyword or identifier.
+onboarding.tsx(161,22): error TS1005: '}' expected.
+pages/account:payments:wallet/alpaca-link.tsx(19,5): error TS1005: ',' expected.
+pages/account:payments:wallet/alpaca-link.tsx(23,24): error TS1005: ';' expected.
+pages/account:payments:wallet/alpaca-link.tsx(24,20): error TS1005: ';' expected.
+pages/account:payments:wallet/alpaca-link.tsx(25,6): error TS1472: 'catch' or 'finally' expected.
+pages/account:payments:wallet/alpaca-link.tsx(25,7): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/alpaca-link.tsx(31,1): error TS1109: Expression expected.
+pages/account:payments:wallet/alpaca-link.tsx(32,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/alpaca-link.tsx(55,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/atm.tsx(25,1): error TS1109: Expression expected.
+pages/account:payments:wallet/atm.tsx(26,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/atm.tsx(74,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/card-links.tsx(35,1): error TS1109: Expression expected.
+pages/account:payments:wallet/card-links.tsx(36,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/card-links.tsx(69,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/create-account.tsx(32,5): error TS1005: ',' expected.
+pages/account:payments:wallet/create-account.tsx(36,18): error TS1005: ';' expected.
+pages/account:payments:wallet/create-account.tsx(37,8): error TS1472: 'catch' or 'finally' expected.
+pages/account:payments:wallet/create-account.tsx(68,5): error TS1005: ',' expected.
+pages/account:payments:wallet/create-account.tsx(72,12): error TS1005: ';' expected.
+pages/account:payments:wallet/create-account.tsx(73,12): error TS1005: ';' expected.
+pages/account:payments:wallet/create-account.tsx(74,9): error TS1005: ';' expected.
+pages/account:payments:wallet/create-account.tsx(75,11): error TS1005: ';' expected.
+pages/account:payments:wallet/create-account.tsx(76,17): error TS1005: ';' expected.
+pages/account:payments:wallet/create-account.tsx(77,17): error TS1005: ';' expected.
+pages/account:payments:wallet/create-account.tsx(78,6): error TS1472: 'catch' or 'finally' expected.
+pages/account:payments:wallet/create-account.tsx(98,1): error TS1109: Expression expected.
+pages/account:payments:wallet/create-account.tsx(99,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/create-account.tsx(161,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/deposit.tsx(50,1): error TS1109: Expression expected.
+pages/account:payments:wallet/deposit.tsx(51,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/deposit.tsx(85,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/keycard.tsx(62,5): error TS1005: ',' expected.
+pages/account:payments:wallet/keycard.tsx(66,14): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(67,15): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(68,18): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(69,8): error TS1472: 'catch' or 'finally' expected.
+pages/account:payments:wallet/keycard.tsx(70,5): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/keycard.tsx(75,5): error TS1005: ',' expected.
+pages/account:payments:wallet/keycard.tsx(79,14): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(80,15): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(81,18): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(82,8): error TS1472: 'catch' or 'finally' expected.
+pages/account:payments:wallet/keycard.tsx(108,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/keycard.tsx(150,5): error TS1005: ',' expected.
+pages/account:payments:wallet/keycard.tsx(154,16): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(155,16): error TS1005: ';' expected.
+pages/account:payments:wallet/keycard.tsx(156,6): error TS1472: 'catch' or 'finally' expected.
+pages/account:payments:wallet/keycard.tsx(242,1): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/keycard.tsx(242,2): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/payment.tsx(38,1): error TS1109: Expression expected.
+pages/account:payments:wallet/payment.tsx(39,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/payment.tsx(68,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/phone-booth.tsx(81,1): error TS1109: Expression expected.
+pages/account:payments:wallet/phone-booth.tsx(82,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/phone-booth.tsx(98,7): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/phone-booth.tsx(133,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/phone-booth.tsx(152,1): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/vault-history.tsx(52,1): error TS1109: Expression expected.
+pages/account:payments:wallet/vault-history.tsx(53,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/vault-history.tsx(94,3): error TS1128: Declaration or statement expected.
+pages/account:payments:wallet/vault.tsx(33,1): error TS1109: Expression expected.
+pages/account:payments:wallet/vault.tsx(34,1): error TS2657: JSX expressions must have one parent element.
+pages/account:payments:wallet/vault.tsx(85,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-badges.tsx(47,5): error TS1005: ',' expected.
+pages/admin/admin-badges.tsx(51,9): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(52,11): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(53,13): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(54,16): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(55,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-badges.tsx(59,5): error TS1005: ',' expected.
+pages/admin/admin-badges.tsx(63,12): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(64,13): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(65,16): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(66,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-badges.tsx(75,5): error TS1005: ',' expected.
+pages/admin/admin-badges.tsx(79,9): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(80,11): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(81,13): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(82,16): error TS1005: ';' expected.
+pages/admin/admin-badges.tsx(83,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-badges.tsx(90,7): error TS1128: Declaration or statement expected.
+pages/admin/admin-badges.tsx(90,15): error TS1109: Expression expected.
+pages/admin/admin-badges.tsx(157,1): error TS1128: Declaration or statement expected.
+pages/admin/admin-ban.tsx(53,5): error TS1005: ',' expected.
+pages/admin/admin-ban.tsx(57,13): error TS1005: ';' expected.
+pages/admin/admin-ban.tsx(58,16): error TS1005: ';' expected.
+pages/admin/admin-ban.tsx(59,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-ban.tsx(69,1): error TS1109: Expression expected.
+pages/admin/admin-ban.tsx(70,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-ban.tsx(108,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-dashboard.tsx(121,1): error TS1109: Expression expected.
+pages/admin/admin-dashboard.tsx(122,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-dashboard.tsx(162,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-fraud.tsx(62,1): error TS1109: Expression expected.
+pages/admin/admin-fraud.tsx(63,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-fraud.tsx(100,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-invite.tsx(70,1): error TS1109: Expression expected.
+pages/admin/admin-invite.tsx(71,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-invite.tsx(117,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-logs.tsx(126,1): error TS1109: Expression expected.
+pages/admin/admin-logs.tsx(127,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-logs.tsx(132,6): error TS17008: JSX element 'div' has no corresponding closing tag.
+pages/admin/admin-logs.tsx(159,10): error TS17008: JSX element 'select' has no corresponding closing tag.
+pages/admin/admin-logs.tsx(166,44): error TS1005: '</' expected.
+pages/admin/admin-logs.tsx(166,44): error TS1005: '}' expected.
+pages/admin/admin-mods.tsx(55,1): error TS1109: Expression expected.
+pages/admin/admin-mods.tsx(56,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-mods.tsx(94,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-season.tsx(41,5): error TS1005: ',' expected.
+pages/admin/admin-season.tsx(45,17): error TS1005: ';' expected.
+pages/admin/admin-season.tsx(46,15): error TS1005: ';' expected.
+pages/admin/admin-season.tsx(47,20): error TS1005: ';' expected.
+pages/admin/admin-season.tsx(49,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-season.tsx(60,1): error TS1109: Expression expected.
+pages/admin/admin-season.tsx(61,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-season.tsx(123,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-utils.tsx(40,5): error TS1005: ',' expected.
+pages/admin/admin-utils.tsx(44,13): error TS1005: ';' expected.
+pages/admin/admin-utils.tsx(45,16): error TS1005: ';' expected.
+pages/admin/admin-utils.tsx(46,5): error TS1109: Expression expected.
+pages/admin/admin-utils.tsx(46,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-utils.tsx(51,1): error TS1109: Expression expected.
+pages/admin/admin-utils.tsx(52,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin-utils.tsx(82,3): error TS1128: Declaration or statement expected.
+pages/admin/admin-xp-inject.tsx(88,5): error TS1005: ',' expected.
+pages/admin/admin-xp-inject.tsx(95,16): error TS1005: ';' expected.
+pages/admin/admin-xp-inject.tsx(96,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-xp-inject.tsx(100,5): error TS1005: ',' expected.
+pages/admin/admin-xp-inject.tsx(104,13): error TS1005: ';' expected.
+pages/admin/admin-xp-inject.tsx(105,16): error TS1005: ';' expected.
+pages/admin/admin-xp-inject.tsx(106,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin-xp-inject.tsx(137,5): error TS1005: ',' expected.
+pages/admin/admin-xp-inject.tsx(141,13): error TS1005: ';' expected.
+pages/admin/admin-xp-inject.tsx(142,16): error TS1005: ';' expected.
+pages/admin/admin-xp-inject.tsx(143,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin.tsx(129,5): error TS1005: ',' expected.
+pages/admin/admin.tsx(133,18): error TS1005: ';' expected.
+pages/admin/admin.tsx(134,17): error TS1005: ';' expected.
+pages/admin/admin.tsx(135,17): error TS1005: ';' expected.
+pages/admin/admin.tsx(136,5): error TS1109: Expression expected.
+pages/admin/admin.tsx(136,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/admin.tsx(142,1): error TS1109: Expression expected.
+pages/admin/admin.tsx(143,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/admin.tsx(238,3): error TS1128: Declaration or statement expected.
+pages/admin/frozen-users.tsx(52,5): error TS1005: ',' expected.
+pages/admin/frozen-users.tsx(56,15): error TS1005: ';' expected.
+pages/admin/frozen-users.tsx(57,18): error TS1005: ';' expected.
+pages/admin/frozen-users.tsx(58,8): error TS1472: 'catch' or 'finally' expected.
+pages/admin/frozen-users.tsx(70,5): error TS1005: ',' expected.
+pages/admin/frozen-users.tsx(74,13): error TS1005: ';' expected.
+pages/admin/frozen-users.tsx(75,16): error TS1005: ';' expected.
+pages/admin/frozen-users.tsx(76,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/frozen-users.tsx(90,1): error TS1109: Expression expected.
+pages/admin/frozen-users.tsx(91,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/frozen-users.tsx(125,3): error TS1128: Declaration or statement expected.
+pages/admin/grant.tsx(29,5): error TS1005: ',' expected.
+pages/admin/grant.tsx(33,12): error TS1005: ';' expected.
+pages/admin/grant.tsx(34,13): error TS1005: ';' expected.
+pages/admin/grant.tsx(35,16): error TS1005: ';' expected.
+pages/admin/grant.tsx(36,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/grant.tsx(40,5): error TS1005: ',' expected.
+pages/admin/grant.tsx(44,13): error TS1005: ';' expected.
+pages/admin/grant.tsx(45,13): error TS1005: ';' expected.
+pages/admin/grant.tsx(46,16): error TS1005: ';' expected.
+pages/admin/grant.tsx(47,11): error TS1005: ';' expected.
+pages/admin/grant.tsx(48,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/grant.tsx(52,5): error TS1005: ',' expected.
+pages/admin/grant.tsx(56,13): error TS1005: ';' expected.
+pages/admin/grant.tsx(57,16): error TS1005: ';' expected.
+pages/admin/grant.tsx(58,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/grant.tsx(66,1): error TS1109: Expression expected.
+pages/admin/grant.tsx(67,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/grant.tsx(99,3): error TS1128: Declaration or statement expected.
+pages/admin/Operator-Market.tsx(60,5): error TS1005: ',' expected.
+pages/admin/Operator-Market.tsx(64,11): error TS1005: ';' expected.
+pages/admin/Operator-Market.tsx(65,13): error TS1005: ';' expected.
+pages/admin/Operator-Market.tsx(66,18): error TS1005: ';' expected.
+pages/admin/Operator-Market.tsx(67,5): error TS1109: Expression expected.
+pages/admin/Operator-Market.tsx(67,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/Operator-Market.tsx(84,1): error TS1109: Expression expected.
+pages/admin/Operator-Market.tsx(85,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/Operator-Market.tsx(125,3): error TS1128: Declaration or statement expected.
+pages/admin/override.tsx(45,1): error TS1109: Expression expected.
+pages/admin/override.tsx(46,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/override.tsx(55,5): error TS1128: Declaration or statement expected.
+pages/admin/private_table.tsx(46,1): error TS1109: Expression expected.
+pages/admin/private_table.tsx(47,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/private_table.tsx(79,3): error TS1128: Declaration or statement expected.
+pages/admin/recruiting.tsx(83,5): error TS1005: ',' expected.
+pages/admin/recruiting.tsx(87,14): error TS1005: ';' expected.
+pages/admin/recruiting.tsx(88,11): error TS1005: ';' expected.
+pages/admin/recruiting.tsx(89,5): error TS1109: Expression expected.
+pages/admin/recruiting.tsx(89,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/recruiting.tsx(134,1): error TS1109: Expression expected.
+pages/admin/recruiting.tsx(135,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/recruiting.tsx(220,3): error TS1128: Declaration or statement expected.
+pages/admin/revoke.tsx(54,5): error TS1005: ',' expected.
+pages/admin/revoke.tsx(58,13): error TS1005: ';' expected.
+pages/admin/revoke.tsx(59,13): error TS1005: ';' expected.
+pages/admin/revoke.tsx(60,16): error TS1005: ';' expected.
+pages/admin/revoke.tsx(61,11): error TS1005: ';' expected.
+pages/admin/revoke.tsx(62,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/revoke.tsx(66,5): error TS1005: ',' expected.
+pages/admin/revoke.tsx(70,13): error TS1005: ';' expected.
+pages/admin/revoke.tsx(71,16): error TS1005: ';' expected.
+pages/admin/revoke.tsx(72,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/revoke.tsx(81,1): error TS1109: Expression expected.
+pages/admin/revoke.tsx(82,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/revoke.tsx(119,3): error TS1128: Declaration or statement expected.
+pages/admin/risk-center.tsx(25,5): error TS1005: ',' expected.
+pages/admin/risk-center.tsx(29,15): error TS1005: ';' expected.
+pages/admin/risk-center.tsx(30,18): error TS1005: ';' expected.
+pages/admin/risk-center.tsx(31,8): error TS1472: 'catch' or 'finally' expected.
+pages/admin/risk-center.tsx(77,5): error TS1005: ',' expected.
+pages/admin/risk-center.tsx(81,13): error TS1005: ';' expected.
+pages/admin/risk-center.tsx(82,16): error TS1005: ';' expected.
+pages/admin/risk-center.tsx(83,6): error TS1472: 'catch' or 'finally' expected.
+pages/admin/risk-center.tsx(91,1): error TS1109: Expression expected.
+pages/admin/risk-center.tsx(92,1): error TS2657: JSX expressions must have one parent element.
+pages/admin/risk-center.tsx(127,3): error TS1128: Declaration or statement expected.
+pages/admin/sandbox.tsx(51,5): error TS1005: ',' expected.
+pages/admin/sandbox.tsx(55,13): error TS1005: ';' expected.
+pages/admin/sandbox.tsx(56,15): error TS1005: ';' expected.
+pages/admin/sandbox.tsx(57,20): error TS1005: ';' expected.
+pages/admin/sandbox.tsx(58,7): error TS1109: Expression expected.
+pages/admin/sandbox.tsx(58,8): error TS1472: 'catch' or 'finally' expected.
+pages/admin/sandbox.tsx(61,5): error TS1005: ',' expected.
+pages/admin/sandbox.tsx(65,11): error TS1005: ';' expected.
+pages/admin/sandbox.tsx(66,7): error TS1109: Expression expected.
+pages/admin/sandbox.tsx(66,8): error TS1472: 'catch' or 'finally' expected.
+pages/admin/sandbox.tsx(89,5): error TS1005: ',' expected.
+pages/admin/sandbox.tsx(93,12): error TS1005: ';' expected.
+pages/admin/sandbox.tsx(94,16): error TS1005: ';' expected.
+pages/admin/sandbox.tsx(95,5): error TS1109: Expression expected.
+pages/admin/sandbox.tsx(95,6): error TS1472: 'catch' or 'finally' expected.
+pages/agents/agent-console.tsx(44,1): error TS1109: Expression expected.
+pages/agents/agent-console.tsx(45,1): error TS2657: JSX expressions must have one parent element.
+pages/agents/agent-console.tsx(86,3): error TS1128: Declaration or statement expected.
+pages/agents/agent-tasks.tsx(52,1): error TS1109: Expression expected.
+pages/agents/agent-tasks.tsx(53,1): error TS2657: JSX expressions must have one parent element.
+pages/agents/agent-tasks.tsx(87,3): error TS1128: Declaration or statement expected.
+pages/agents/ai-health.tsx(50,5): error TS1005: ',' expected.
+pages/agents/ai-health.tsx(54,17): error TS1005: ';' expected.
+pages/agents/ai-health.tsx(55,20): error TS1005: ';' expected.
+pages/agents/ai-health.tsx(56,10): error TS1472: 'catch' or 'finally' expected.
+pages/agents/ai_agents.tsx(58,5): error TS1005: ',' expected.
+pages/agents/ai_agents.tsx(62,13): error TS1005: ';' expected.
+pages/agents/ai_agents.tsx(63,16): error TS1005: ';' expected.
+pages/agents/ai_agents.tsx(64,6): error TS1472: 'catch' or 'finally' expected.
+pages/agents/ai_agents.tsx(83,1): error TS1109: Expression expected.
+pages/agents/ai_agents.tsx(84,1): error TS2657: JSX expressions must have one parent element.
+pages/agents/ai_agents.tsx(153,3): error TS1128: Declaration or statement expected.
+pages/agents/echomind-anamoly.tsx(65,5): error TS1005: ',' expected.
+pages/agents/echomind-anamoly.tsx(69,17): error TS1005: ';' expected.
+pages/agents/echomind-anamoly.tsx(70,20): error TS1005: ';' expected.
+pages/agents/echomind-anamoly.tsx(71,10): error TS1472: 'catch' or 'finally' expected.
+pages/agents/echomind-anamoly.tsx(89,1): error TS1109: Expression expected.
+pages/agents/echomind-anamoly.tsx(90,1): error TS2657: JSX expressions must have one parent element.
+pages/agents/echomind-anamoly.tsx(141,3): error TS1128: Declaration or statement expected.
+pages/analytics/analytics-panel.tsx(100,1): error TS1109: Expression expected.
+pages/analytics/analytics-panel.tsx(101,1): error TS2657: JSX expressions must have one parent element.
+pages/analytics/analytics-panel.tsx(139,3): error TS1128: Declaration or statement expected.
+pages/analytics/analytics.tsx(109,1): error TS1109: Expression expected.
+pages/analytics/analytics.tsx(110,1): error TS2657: JSX expressions must have one parent element.
+pages/analytics/analytics.tsx(200,3): error TS1128: Declaration or statement expected.
+pages/analytics/global-search.tsx(52,1): error TS1109: Expression expected.
+pages/analytics/global-search.tsx(53,1): error TS2657: JSX expressions must have one parent element.
+pages/analytics/global-search.tsx(87,3): error TS1128: Declaration or statement expected.
+pages/analytics/global-search.tsx(88,1): error TS1128: Declaration or statement expected.
+pages/analytics/global-search.tsx(88,2): error TS1128: Declaration or statement expected.
+pages/analytics/season-dashboard.tsx(51,1): error TS1109: Expression expected.
+pages/analytics/season-dashboard.tsx(52,1): error TS2657: JSX expressions must have one parent element.
+pages/analytics/season-dashboard.tsx(89,3): error TS1128: Declaration or statement expected.
+pages/analytics/sectors.tsx(47,1): error TS1109: Expression expected.
+pages/analytics/sectors.tsx(48,1): error TS2657: JSX expressions must have one parent element.
+pages/analytics/sectors.tsx(89,3): error TS1128: Declaration or statement expected.
+pages/audit/audit-dashboard.tsx(44,1): error TS1109: Expression expected.
+pages/audit/audit-dashboard.tsx(45,1): error TS2657: JSX expressions must have one parent element.
+pages/audit/audit-dashboard.tsx(80,3): error TS1128: Declaration or statement expected.
+pages/audit/email-log.tsx(31,1): error TS1109: Expression expected.
+pages/audit/email-log.tsx(32,1): error TS2657: JSX expressions must have one parent element.
+pages/audit/email-log.tsx(59,17): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(60,1): error TS1005: '}' expected.
+pages/audit/email-log.tsx(60,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(60,24): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(61,17): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(62,1): error TS1005: '}' expected.
+pages/audit/email-log.tsx(62,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(62,27): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(63,17): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(64,1): error TS1005: '}' expected.
+pages/audit/email-log.tsx(64,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(65,17): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(66,1): error TS1005: '}' expected.
+pages/audit/email-log.tsx(66,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(67,17): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(68,1): error TS1005: '}' expected.
+pages/audit/email-log.tsx(68,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(69,17): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(70,1): error TS1005: '}' expected.
+pages/audit/email-log.tsx(70,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(70,3): error TS1002: Unterminated string literal.
+pages/audit/email-log.tsx(82,5): error TS1005: ',' expected.
+pages/audit/email-log.tsx(86,27): error TS1005: ';' expected.
+pages/audit/email-log.tsx(88,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(90,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(91,3): error TS1109: Expression expected.
+pages/audit/email-log.tsx(93,5): error TS1005: ',' expected.
+pages/audit/email-log.tsx(94,62): error TS1005: '}' expected.
+pages/audit/email-log.tsx(95,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(99,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(101,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(102,17): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(103,49): error TS1005: '}' expected.
+pages/audit/email-log.tsx(104,17): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(105,17): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(105,18): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(107,15): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/audit/email-log.tsx(109,17): error TS17002: Expected corresponding JSX closing tag for 'pre'.
+pages/audit/email-log.tsx(110,13): error TS1005: ')' expected.
+pages/audit/email-log.tsx(110,15): error TS17002: Expected corresponding JSX closing tag for 'div'.
+pages/audit/email-log.tsx(111,12): error TS1005: '}' expected.
+pages/audit/email-log.tsx(111,13): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/audit/email-log.tsx(113,7): error TS1128: Declaration or statement expected.
+pages/audit/email-log.tsx(114,5): error TS1128: Declaration or statement expected.
+pages/audit/email-log.tsx(115,3): error TS1109: Expression expected.
+pages/audit/email-log.tsx(116,1): error TS1128: Declaration or statement expected.
+pages/audit/resend-log.tsx(28,1): error TS1109: Expression expected.
+pages/audit/resend-log.tsx(29,1): error TS2657: JSX expressions must have one parent element.
+pages/audit/resend-log.tsx(46,3): error TS1128: Declaration or statement expected.
+pages/cases/cases.tsx(66,1): error TS1109: Expression expected.
+pages/cases/cases.tsx(67,1): error TS2657: JSX expressions must have one parent element.
+pages/cases/cases.tsx(128,3): error TS1128: Declaration or statement expected.
+pages/crates/crate-viewer.tsx(46,1): error TS1109: Expression expected.
+pages/crates/crate-viewer.tsx(47,1): error TS2657: JSX expressions must have one parent element.
+pages/crates/crate-viewer.tsx(93,3): error TS1128: Declaration or statement expected.
+pages/crates/cratereveal.tsx(42,5): error TS1005: ',' expected.
+pages/crates/cratereveal.tsx(46,11): error TS1005: ';' expected.
+pages/crates/cratereveal.tsx(47,13): error TS1005: ';' expected.
+pages/crates/cratereveal.tsx(48,18): error TS1005: ';' expected.
+pages/crates/cratereveal.tsx(49,6): error TS1472: 'catch' or 'finally' expected.
+pages/crates/cratereveal.tsx(56,1): error TS1109: Expression expected.
+pages/crates/cratereveal.tsx(57,1): error TS2657: JSX expressions must have one parent element.
+pages/crates/cratereveal.tsx(99,3): error TS1128: Declaration or statement expected.
+pages/crates/crates.tsx(40,1): error TS1109: Expression expected.
+pages/crates/crates.tsx(41,1): error TS2657: JSX expressions must have one parent element.
+pages/crates/crates.tsx(71,3): error TS1128: Declaration or statement expected.
+pages/crates/crates.tsx(72,1): error TS1128: Declaration or statement expected.
+pages/crates/crates.tsx(72,2): error TS1128: Declaration or statement expected.
+pages/create-account.tsx(32,5): error TS1005: ',' expected.
+pages/create-account.tsx(36,18): error TS1005: ';' expected.
+pages/create-account.tsx(37,8): error TS1472: 'catch' or 'finally' expected.
+pages/create-account.tsx(68,5): error TS1005: ',' expected.
+pages/create-account.tsx(72,12): error TS1005: ';' expected.
+pages/create-account.tsx(73,12): error TS1005: ';' expected.
+pages/create-account.tsx(74,9): error TS1005: ';' expected.
+pages/create-account.tsx(75,11): error TS1005: ';' expected.
+pages/create-account.tsx(76,17): error TS1005: ';' expected.
+pages/create-account.tsx(77,17): error TS1005: ';' expected.
+pages/create-account.tsx(78,6): error TS1472: 'catch' or 'finally' expected.
+pages/create-account.tsx(98,1): error TS1109: Expression expected.
+pages/create-account.tsx(99,1): error TS2657: JSX expressions must have one parent element.
+pages/create-account.tsx(161,3): error TS1128: Declaration or statement expected.
+pages/dao/dao-submit.tsx(60,1): error TS1109: Expression expected.
+pages/dao/dao-submit.tsx(61,1): error TS2657: JSX expressions must have one parent element.
+pages/dao/dao-submit.tsx(70,5): error TS1128: Declaration or statement expected.
+pages/dao/dao-vote.tsx(48,5): error TS1005: ',' expected.
+pages/dao/dao-vote.tsx(52,18): error TS1005: ';' expected.
+pages/dao/dao-vote.tsx(54,5): error TS1109: Expression expected.
+pages/dao/dao-vote.tsx(54,6): error TS1472: 'catch' or 'finally' expected.
+pages/dao/dao-vote.tsx(70,1): error TS1109: Expression expected.
+pages/dao/dao-vote.tsx(71,1): error TS2657: JSX expressions must have one parent element.
+pages/dao/dao-vote.tsx(82,5): error TS1128: Declaration or statement expected.
+pages/dao/dao.tsx(34,1): error TS1109: Expression expected.
+pages/dao/dao.tsx(35,1): error TS2657: JSX expressions must have one parent element.
+pages/dao/dao.tsx(46,5): error TS1128: Declaration or statement expected.
+pages/dao/dao.tsx(47,3): error TS1128: Declaration or statement expected.
+pages/dao/dao.tsx(95,1): error TS1128: Declaration or statement expected.
+pages/engines/[id].tsx(43,9): error TS1128: Declaration or statement expected.
+pages/engines/[id].tsx(45,6): error TS1005: ')' expected.
+pages/engines/[id].tsx(47,4): error TS1128: Declaration or statement expected.
+pages/engines/[id].tsx(47,10): error TS1005: ';' expected.
+pages/engines/[id].tsx(55,5): error TS1005: ',' expected.
+pages/engines/[id].tsx(59,16): error TS1005: ';' expected.
+pages/engines/[id].tsx(60,6): error TS1472: 'catch' or 'finally' expected.
+pages/engines/[id].tsx(72,1): error TS1109: Expression expected.
+pages/engines/[id].tsx(73,1): error TS2657: JSX expressions must have one parent element.
+pages/engines/[id].tsx(95,3): error TS1128: Declaration or statement expected.
+pages/engines/[id].tsx(96,1): error TS1128: Declaration or statement expected.
+pages/engines/earnings.tsx(42,1): error TS1109: Expression expected.
+pages/engines/earnings.tsx(43,1): error TS2657: JSX expressions must have one parent element.
+pages/engines/earnings.tsx(76,3): error TS1128: Declaration or statement expected.
+pages/engines/quest_engine.tsx(62,3): error TS1137: Expression or comma expected.
+pages/engines/quest_engine.tsx(67,17): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(68,15): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(69,19): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(70,7): error TS1109: Expression expected.
+pages/engines/quest_engine.tsx(70,8): error TS1128: Declaration or statement expected.
+pages/engines/quest_engine.tsx(71,5): error TS1128: Declaration or statement expected.
+pages/engines/quest_engine.tsx(71,6): error TS1128: Declaration or statement expected.
+pages/engines/quest_engine.tsx(75,5): error TS1005: ',' expected.
+pages/engines/quest_engine.tsx(79,15): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(80,13): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(81,5): error TS1109: Expression expected.
+pages/engines/quest_engine.tsx(81,6): error TS1472: 'catch' or 'finally' expected.
+pages/engines/quest_engine.tsx(90,5): error TS1005: ',' expected.
+pages/engines/quest_engine.tsx(94,14): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(95,17): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(96,15): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(97,15): error TS1005: ';' expected.
+pages/engines/quest_engine.tsx(98,7): error TS1109: Expression expected.
+pages/engines/quest_engine.tsx(98,8): error TS1472: 'catch' or 'finally' expected.
+pages/engines/quest_engine.tsx(108,1): error TS1109: Expression expected.
+pages/engines/quest_engine.tsx(109,1): error TS2657: JSX expressions must have one parent element.
+pages/engines/quest_engine.tsx(156,3): error TS1128: Declaration or statement expected.
+pages/engines/quest_engine.tsx(157,1): error TS1128: Declaration or statement expected.
+pages/games/buffalo.tsx(66,1): error TS1109: Expression expected.
+pages/games/buffalo.tsx(67,1): error TS2657: JSX expressions must have one parent element.
+pages/games/buffalo.tsx(116,3): error TS1128: Declaration or statement expected.
+pages/games/cantina.tsx(81,1): error TS1109: Expression expected.
+pages/games/cantina.tsx(82,1): error TS2657: JSX expressions must have one parent element.
+pages/games/cantina.tsx(93,5): error TS1128: Declaration or statement expected.
+pages/games/cards.tsx(56,1): error TS1109: Expression expected.
+pages/games/cards.tsx(57,1): error TS2657: JSX expressions must have one parent element.
+pages/games/cards.tsx(86,3): error TS1128: Declaration or statement expected.
+pages/games/dice.tsx(67,1): error TS1109: Expression expected.
+pages/games/dice.tsx(68,1): error TS2657: JSX expressions must have one parent element.
+pages/games/dice.tsx(77,5): error TS1128: Declaration or statement expected.
+pages/games/edu-farm.tsx(51,1): error TS1109: Expression expected.
+pages/games/edu-farm.tsx(52,1): error TS2657: JSX expressions must have one parent element.
+pages/games/edu-farm.tsx(65,7): error TS1128: Declaration or statement expected.
+pages/games/edu-farm.tsx(92,3): error TS1128: Declaration or statement expected.
+pages/games/edu-farm.tsx(136,1): error TS1128: Declaration or statement expected.
+pages/games/firelink.tsx(71,1): error TS1109: Expression expected.
+pages/games/firelink.tsx(72,1): error TS2657: JSX expressions must have one parent element.
+pages/games/firelink.tsx(123,3): error TS1128: Declaration or statement expected.
+pages/games/game-room.tsx(73,1): error TS1109: Expression expected.
+pages/games/game-room.tsx(74,1): error TS2657: JSX expressions must have one parent element.
+pages/games/game-room.tsx(132,3): error TS1128: Declaration or statement expected.
+pages/games/gates.tsx(90,1): error TS1109: Expression expected.
+pages/games/gates.tsx(91,1): error TS2657: JSX expressions must have one parent element.
+pages/games/gates.tsx(100,5): error TS1128: Declaration or statement expected.
+pages/games/heads-tails.tsx(52,1): error TS1109: Expression expected.
+pages/games/heads-tails.tsx(53,1): error TS2657: JSX expressions must have one parent element.
+pages/games/heads-tails.tsx(100,3): error TS1128: Declaration or statement expected.
+pages/games/high-rollers.tsx(32,1): error TS1109: Expression expected.
+pages/games/high-rollers.tsx(33,1): error TS2657: JSX expressions must have one parent element.
+pages/games/high-rollers.tsx(66,3): error TS1128: Declaration or statement expected.
+pages/games/kids/bakery.tsx(55,1): error TS1109: Expression expected.
+pages/games/kids/bakery.tsx(56,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/bakery.tsx(94,3): error TS1128: Declaration or statement expected.
+pages/games/kids/barber.tsx(43,1): error TS1109: Expression expected.
+pages/games/kids/barber.tsx(44,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/barber.tsx(78,3): error TS1128: Declaration or statement expected.
+pages/games/kids/buisness-owner.tsx(46,1): error TS1109: Expression expected.
+pages/games/kids/buisness-owner.tsx(47,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/buisness-owner.tsx(77,3): error TS1128: Declaration or statement expected.
+pages/games/kids/carpentry.tsx(43,1): error TS1109: Expression expected.
+pages/games/kids/carpentry.tsx(44,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/carpentry.tsx(67,3): error TS1128: Declaration or statement expected.
+pages/games/kids/childcare.tsx(36,1): error TS1109: Expression expected.
+pages/games/kids/childcare.tsx(37,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/childcare.tsx(60,3): error TS1128: Declaration or statement expected.
+pages/games/kids/concrete.tsx(28,1): error TS1109: Expression expected.
+pages/games/kids/concrete.tsx(29,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/concrete.tsx(52,3): error TS1128: Declaration or statement expected.
+pages/games/kids/cosmetology.tsx(30,1): error TS1109: Expression expected.
+pages/games/kids/cosmetology.tsx(31,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/cosmetology.tsx(70,3): error TS1128: Declaration or statement expected.
+pages/games/kids/culinary.tsx(29,1): error TS1109: Expression expected.
+pages/games/kids/culinary.tsx(30,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/culinary.tsx(69,3): error TS1128: Declaration or statement expected.
+pages/games/kids/detective.tsx(38,1): error TS1109: Expression expected.
+pages/games/kids/detective.tsx(39,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/detective.tsx(83,3): error TS1128: Declaration or statement expected.
+pages/games/kids/drywall.tsx(50,1): error TS1109: Expression expected.
+pages/games/kids/drywall.tsx(51,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/drywall.tsx(86,3): error TS1128: Declaration or statement expected.
+pages/games/kids/electric.tsx(26,1): error TS1109: Expression expected.
+pages/games/kids/electric.tsx(27,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/electric.tsx(59,3): error TS1128: Declaration or statement expected.
+pages/games/kids/engineering.tsx(27,1): error TS1109: Expression expected.
+pages/games/kids/engineering.tsx(28,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/engineering.tsx(59,3): error TS1128: Declaration or statement expected.
+pages/games/kids/equipment_operator.tsx(45,1): error TS1109: Expression expected.
+pages/games/kids/equipment_operator.tsx(46,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/equipment_operator.tsx(81,3): error TS1128: Declaration or statement expected.
+pages/games/kids/farming.tsx(32,1): error TS1109: Expression expected.
+pages/games/kids/farming.tsx(33,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/farming.tsx(54,3): error TS1128: Declaration or statement expected.
+pages/games/kids/firefighter.tsx(47,1): error TS1109: Expression expected.
+pages/games/kids/firefighter.tsx(48,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/firefighter.tsx(78,3): error TS1128: Declaration or statement expected.
+pages/games/kids/hvac.tsx(22,1): error TS1109: Expression expected.
+pages/games/kids/hvac.tsx(23,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/hvac.tsx(89,3): error TS1128: Declaration or statement expected.
+pages/games/kids/landscaping.tsx(40,1): error TS1109: Expression expected.
+pages/games/kids/landscaping.tsx(41,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/landscaping.tsx(70,3): error TS1128: Declaration or statement expected.
+pages/games/kids/mechanic.tsx(36,1): error TS1109: Expression expected.
+pages/games/kids/mechanic.tsx(37,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/mechanic.tsx(54,3): error TS1128: Declaration or statement expected.
+pages/games/kids/Nurse.tsx(30,1): error TS1109: Expression expected.
+pages/games/kids/Nurse.tsx(31,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/Nurse.tsx(61,3): error TS1128: Declaration or statement expected.
+pages/games/kids/painting.tsx(29,1): error TS1109: Expression expected.
+pages/games/kids/painting.tsx(30,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/painting.tsx(54,3): error TS1128: Declaration or statement expected.
+pages/games/kids/plumbing.tsx(26,1): error TS1109: Expression expected.
+pages/games/kids/plumbing.tsx(27,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/plumbing.tsx(66,3): error TS1128: Declaration or statement expected.
+pages/games/kids/racecar-driver.tsx(16,1): error TS1109: Expression expected.
+pages/games/kids/racecar-driver.tsx(17,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/racecar-driver.tsx(83,3): error TS1128: Declaration or statement expected.
+pages/games/kids/roofing.tsx(45,1): error TS1109: Expression expected.
+pages/games/kids/roofing.tsx(46,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/roofing.tsx(79,3): error TS1128: Declaration or statement expected.
+pages/games/kids/security.tsx(56,1): error TS1109: Expression expected.
+pages/games/kids/security.tsx(57,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/security.tsx(67,5): error TS1128: Declaration or statement expected.
+pages/games/kids/tattoo artist.tsx(39,1): error TS1109: Expression expected.
+pages/games/kids/tattoo artist.tsx(40,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/tattoo artist.tsx(75,3): error TS1128: Declaration or statement expected.
+pages/games/kids/truck-driver.tsx(17,1): error TS1109: Expression expected.
+pages/games/kids/truck-driver.tsx(18,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/truck-driver.tsx(85,3): error TS1128: Declaration or statement expected.
+pages/games/kids/welding.tsx(30,1): error TS1109: Expression expected.
+pages/games/kids/welding.tsx(31,1): error TS2657: JSX expressions must have one parent element.
+pages/games/kids/welding.tsx(55,3): error TS1128: Declaration or statement expected.
+pages/games/parlay.tsx(51,1): error TS1109: Expression expected.
+pages/games/parlay.tsx(52,1): error TS2657: JSX expressions must have one parent element.
+pages/games/parlay.tsx(61,5): error TS1128: Declaration or statement expected.
+pages/games/roulette.tsx(55,1): error TS1109: Expression expected.
+pages/games/roulette.tsx(56,1): error TS2657: JSX expressions must have one parent element.
+pages/games/roulette.tsx(99,3): error TS1128: Declaration or statement expected.
+pages/games/simulator.tsx(25,1): error TS1109: Expression expected.
+pages/games/simulator.tsx(26,1): error TS2657: JSX expressions must have one parent element.
+pages/games/simulator.tsx(49,3): error TS1128: Declaration or statement expected.
+pages/games/slots.tsx(82,1): error TS1109: Expression expected.
+pages/games/slots.tsx(83,1): error TS2657: JSX expressions must have one parent element.
+pages/games/slots.tsx(134,3): error TS1128: Declaration or statement expected.
+pages/games/sports.tsx(80,1): error TS1109: Expression expected.
+pages/games/sports.tsx(81,1): error TS2657: JSX expressions must have one parent element.
+pages/games/sports.tsx(89,5): error TS1128: Declaration or statement expected.
+pages/games/sweet.tsx(66,1): error TS1109: Expression expected.
+pages/games/sweet.tsx(67,1): error TS2657: JSX expressions must have one parent element.
+pages/games/sweet.tsx(76,5): error TS1128: Declaration or statement expected.
+pages/games/wheel.tsx(56,1): error TS1109: Expression expected.
+pages/games/wheel.tsx(57,1): error TS2657: JSX expressions must have one parent element.
+pages/games/wheel.tsx(66,5): error TS1128: Declaration or statement expected.
+pages/guardian/guardian-consent.tsx(44,1): error TS1109: Expression expected.
+pages/guardian/guardian-consent.tsx(45,1): error TS2657: JSX expressions must have one parent element.
+pages/guardian/guardian-consent.tsx(73,3): error TS1128: Declaration or statement expected.
+pages/guardian/guardian-gate.tsx(41,1): error TS1109: Expression expected.
+pages/guardian/guardian-gate.tsx(42,1): error TS2657: JSX expressions must have one parent element.
+pages/guardian/guardian-gate.tsx(51,3): error TS1128: Declaration or statement expected.
+pages/guardian/guardian-signup.tsx(47,1): error TS1109: Expression expected.
+pages/guardian/guardian-signup.tsx(48,1): error TS2657: JSX expressions must have one parent element.
+pages/guardian/guardian-signup.tsx(106,3): error TS1128: Declaration or statement expected.
+pages/guardian/guardian-verify.tsx(56,1): error TS1109: Expression expected.
+pages/guardian/guardian-verify.tsx(57,1): error TS2657: JSX expressions must have one parent element.
+pages/guardian/guardian-verify.tsx(136,3): error TS1128: Declaration or statement expected.
+pages/guardian/guardian.tsx(49,1): error TS1109: Expression expected.
+pages/guardian/guardian.tsx(50,1): error TS2657: JSX expressions must have one parent element.
+pages/guardian/guardian.tsx(120,3): error TS1128: Declaration or statement expected.
+pages/guardian/verify-code.tsx(41,1): error TS1109: Expression expected.
+pages/guardian/verify-code.tsx(42,1): error TS2657: JSX expressions must have one parent element.
+pages/guardian/verify-code.tsx(73,3): error TS1128: Declaration or statement expected.
+pages/home.tsx(61,1): error TS1109: Expression expected.
+pages/home.tsx(62,1): error TS2657: JSX expressions must have one parent element.
+pages/home.tsx(97,3): error TS1128: Declaration or statement expected.
+pages/kids/kids/kids-zone.tsx(27,1): error TS1109: Expression expected.
+pages/kids/kids/kids-zone.tsx(28,1): error TS2657: JSX expressions must have one parent element.
+pages/kids/kids/kids-zone.tsx(37,5): error TS1128: Declaration or statement expected.
+pages/kids/kids/kids.tsx(24,1): error TS1109: Expression expected.
+pages/kids/kids/kids.tsx(25,1): error TS2657: JSX expressions must have one parent element.
+pages/kids/kids/kids.tsx(51,3): error TS1128: Declaration or statement expected.
+pages/legal/agreement.tsx(20,5): error TS1005: ',' expected.
+pages/legal/agreement.tsx(24,15): error TS1005: ';' expected.
+pages/legal/agreement.tsx(25,16): error TS1005: ';' expected.
+pages/legal/agreement.tsx(26,5): error TS1109: Expression expected.
+pages/legal/agreement.tsx(26,6): error TS1472: 'catch' or 'finally' expected.
+pages/legal/agreement.tsx(32,1): error TS1109: Expression expected.
+pages/legal/agreement.tsx(33,1): error TS2657: JSX expressions must have one parent element.
+pages/legal/agreement.tsx(77,3): error TS1128: Declaration or statement expected.
+pages/legal/terms.tsx(16,1): error TS1109: Expression expected.
+pages/legal/terms.tsx(17,1): error TS2657: JSX expressions must have one parent element.
+pages/legal/terms.tsx(22,6): error TS17008: JSX element 'div' has no corresponding closing tag.
+pages/legal/terms.tsx(62,64): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/legal/terms.tsx(81,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/legal/terms.tsx(81,2): error TS1005: '</' expected.
+pages/legal/terms.tsx(81,2): error TS1005: '}' expected.
+pages/marketing/waitlist.tsx(33,1): error TS1109: Expression expected.
+pages/marketing/waitlist.tsx(34,1): error TS2657: JSX expressions must have one parent element.
+pages/marketing/waitlist.tsx(66,3): error TS1128: Declaration or statement expected.
+pages/misc/atm.tsx(25,1): error TS1109: Expression expected.
+pages/misc/atm.tsx(26,1): error TS2657: JSX expressions must have one parent element.
+pages/misc/atm.tsx(74,3): error TS1128: Declaration or statement expected.
+pages/misc/crtLauncher.tsx(54,1): error TS1109: Expression expected.
+pages/misc/crtLauncher.tsx(55,1): error TS2657: JSX expressions must have one parent element.
+pages/misc/crtLauncher.tsx(121,3): error TS1128: Declaration or statement expected.
+pages/misc/echomind-anamoly.tsx(65,5): error TS1005: ',' expected.
+pages/misc/echomind-anamoly.tsx(69,17): error TS1005: ';' expected.
+pages/misc/echomind-anamoly.tsx(70,20): error TS1005: ';' expected.
+pages/misc/echomind-anamoly.tsx(71,10): error TS1472: 'catch' or 'finally' expected.
+pages/misc/echomind-anamoly.tsx(89,1): error TS1109: Expression expected.
+pages/misc/echomind-anamoly.tsx(90,1): error TS2657: JSX expressions must have one parent element.
+pages/misc/echomind-anamoly.tsx(141,3): error TS1128: Declaration or statement expected.
+pages/misc/email-log.tsx(31,1): error TS1109: Expression expected.
+pages/misc/email-log.tsx(32,1): error TS2657: JSX expressions must have one parent element.
+pages/misc/email-log.tsx(59,17): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(60,1): error TS1005: '}' expected.
+pages/misc/email-log.tsx(60,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(60,24): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(61,17): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(62,1): error TS1005: '}' expected.
+pages/misc/email-log.tsx(62,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(62,27): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(63,17): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(64,1): error TS1005: '}' expected.
+pages/misc/email-log.tsx(64,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(65,17): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(66,1): error TS1005: '}' expected.
+pages/misc/email-log.tsx(66,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(67,17): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(68,1): error TS1005: '}' expected.
+pages/misc/email-log.tsx(68,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(69,17): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(70,1): error TS1005: '}' expected.
+pages/misc/email-log.tsx(70,2): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(70,3): error TS1002: Unterminated string literal.
+pages/misc/email-log.tsx(82,5): error TS1005: ',' expected.
+pages/misc/email-log.tsx(86,27): error TS1005: ';' expected.
+pages/misc/email-log.tsx(88,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(90,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(91,3): error TS1109: Expression expected.
+pages/misc/email-log.tsx(93,5): error TS1005: ',' expected.
+pages/misc/email-log.tsx(94,62): error TS1005: '}' expected.
+pages/misc/email-log.tsx(95,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(99,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(101,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(102,17): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(103,49): error TS1005: '}' expected.
+pages/misc/email-log.tsx(104,17): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(105,17): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(105,18): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(107,15): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/misc/email-log.tsx(109,17): error TS17002: Expected corresponding JSX closing tag for 'pre'.
+pages/misc/email-log.tsx(110,13): error TS1005: ')' expected.
+pages/misc/email-log.tsx(110,15): error TS17002: Expected corresponding JSX closing tag for 'div'.
+pages/misc/email-log.tsx(111,12): error TS1005: '}' expected.
+pages/misc/email-log.tsx(111,13): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/misc/email-log.tsx(113,7): error TS1128: Declaration or statement expected.
+pages/misc/email-log.tsx(114,5): error TS1128: Declaration or statement expected.
+pages/misc/email-log.tsx(115,3): error TS1109: Expression expected.
+pages/misc/email-log.tsx(116,1): error TS1128: Declaration or statement expected.
+pages/misc/uplink-chain.tsx(47,1): error TS1109: Expression expected.
+pages/misc/uplink-chain.tsx(48,1): error TS2657: JSX expressions must have one parent element.
+pages/misc/uplink-chain.tsx(99,3): error TS1128: Declaration or statement expected.
+pages/onboarding/phone-booth.tsx(81,1): error TS1109: Expression expected.
+pages/onboarding/phone-booth.tsx(82,1): error TS2657: JSX expressions must have one parent element.
+pages/onboarding/phone-booth.tsx(98,7): error TS1128: Declaration or statement expected.
+pages/onboarding/phone-booth.tsx(133,3): error TS1128: Declaration or statement expected.
+pages/onboarding/phone-booth.tsx(152,1): error TS1128: Declaration or statement expected.
+pages/operator/dashboard.tsx(1,1): error TS1435: Unknown keyword or identifier. Did you mean 'import'?
+pages/operator/dashboard.tsx(1,31): error TS1434: Unexpected keyword or identifier.
+pages/operator/Operator-Market.tsx(60,5): error TS1005: ',' expected.
+pages/operator/Operator-Market.tsx(64,11): error TS1005: ';' expected.
+pages/operator/Operator-Market.tsx(65,13): error TS1005: ';' expected.
+pages/operator/Operator-Market.tsx(66,18): error TS1005: ';' expected.
+pages/operator/Operator-Market.tsx(67,5): error TS1109: Expression expected.
+pages/operator/Operator-Market.tsx(67,6): error TS1472: 'catch' or 'finally' expected.
+pages/operator/Operator-Market.tsx(84,1): error TS1109: Expression expected.
+pages/operator/Operator-Market.tsx(85,1): error TS2657: JSX expressions must have one parent element.
+pages/operator/Operator-Market.tsx(125,3): error TS1128: Declaration or statement expected.
+pages/operator/phone-booth.tsx(81,1): error TS1109: Expression expected.
+pages/operator/phone-booth.tsx(82,1): error TS2657: JSX expressions must have one parent element.
+pages/operator/phone-booth.tsx(98,7): error TS1128: Declaration or statement expected.
+pages/operator/phone-booth.tsx(133,3): error TS1128: Declaration or statement expected.
+pages/operator/phone-booth.tsx(152,1): error TS1128: Declaration or statement expected.
+pages/operator/profile.tsx(132,1): error TS1109: Expression expected.
+pages/operator/profile.tsx(133,1): error TS2657: JSX expressions must have one parent element.
+pages/operator/profile.tsx(188,3): error TS1128: Declaration or statement expected.
+pages/operator/profile.tsx(189,1): error TS1128: Declaration or statement expected.
+pages/operator/profile.tsx(189,2): error TS1128: Declaration or statement expected.
+pages/operator/promotion-log.tsx(94,1): error TS1109: Expression expected.
+pages/operator/promotion-log.tsx(95,1): error TS2657: JSX expressions must have one parent element.
+pages/operator/promotion-log.tsx(164,3): error TS1128: Declaration or statement expected.
+pages/operator/settings.tsx(102,1): error TS1109: Expression expected.
+pages/operator/settings.tsx(103,1): error TS2657: JSX expressions must have one parent element.
+pages/operator/settings.tsx(164,3): error TS1128: Declaration or statement expected.
+pages/operator/settings.tsx(165,1): error TS1128: Declaration or statement expected.
+pages/operator/settings.tsx(165,2): error TS1128: Declaration or statement expected.
+pages/redeem.tsx(43,5): error TS1005: ',' expected.
+pages/redeem.tsx(47,13): error TS1005: ';' expected.
+pages/redeem.tsx(48,16): error TS1005: ';' expected.
+pages/redeem.tsx(49,5): error TS1109: Expression expected.
+pages/redeem.tsx(49,6): error TS1472: 'catch' or 'finally' expected.
+pages/redeem.tsx(61,1): error TS1109: Expression expected.
+pages/redeem.tsx(62,1): error TS2657: JSX expressions must have one parent element.
+pages/redeem.tsx(99,3): error TS1128: Declaration or statement expected.
+pages/sectors.tsx(47,1): error TS1109: Expression expected.
+pages/sectors.tsx(48,1): error TS2657: JSX expressions must have one parent element.
+pages/sectors.tsx(89,3): error TS1128: Declaration or statement expected.
+pages/security:auth/auth.tsx(68,5): error TS1005: ',' expected.
+pages/security:auth/auth.tsx(72,19): error TS1005: ';' expected.
+pages/security:auth/auth.tsx(73,22): error TS1005: ';' expected.
+pages/security:auth/auth.tsx(74,7): error TS1109: Expression expected.
+pages/security:auth/auth.tsx(74,8): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/auth.tsx(82,5): error TS1005: ',' expected.
+pages/security:auth/auth.tsx(86,17): error TS1005: ';' expected.
+pages/security:auth/auth.tsx(87,7): error TS1109: Expression expected.
+pages/security:auth/auth.tsx(87,8): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/auth.tsx(107,9): error TS1128: Declaration or statement expected.
+pages/security:auth/auth.tsx(113,3): error TS1128: Declaration or statement expected.
+pages/security:auth/auth.tsx(116,1): error TS1109: Expression expected.
+pages/security:auth/auth.tsx(117,1): error TS2657: JSX expressions must have one parent element.
+pages/security:auth/auth.tsx(151,3): error TS1128: Declaration or statement expected.
+pages/security:auth/auth.tsx(152,1): error TS1128: Declaration or statement expected.
+pages/security:auth/frozen-users.tsx(52,5): error TS1005: ',' expected.
+pages/security:auth/frozen-users.tsx(56,15): error TS1005: ';' expected.
+pages/security:auth/frozen-users.tsx(57,18): error TS1005: ';' expected.
+pages/security:auth/frozen-users.tsx(58,8): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/frozen-users.tsx(70,5): error TS1005: ',' expected.
+pages/security:auth/frozen-users.tsx(74,13): error TS1005: ';' expected.
+pages/security:auth/frozen-users.tsx(75,16): error TS1005: ';' expected.
+pages/security:auth/frozen-users.tsx(76,6): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/frozen-users.tsx(90,1): error TS1109: Expression expected.
+pages/security:auth/frozen-users.tsx(91,1): error TS2657: JSX expressions must have one parent element.
+pages/security:auth/frozen-users.tsx(125,3): error TS1128: Declaration or statement expected.
+pages/security:auth/login.tsx(62,5): error TS1005: ',' expected.
+pages/security:auth/login.tsx(66,19): error TS1005: ';' expected.
+pages/security:auth/login.tsx(67,21): error TS1005: ';' expected.
+pages/security:auth/login.tsx(68,20): error TS1005: ';' expected.
+pages/security:auth/login.tsx(69,9): error TS1109: Expression expected.
+pages/security:auth/login.tsx(69,10): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/login.tsx(74,5): error TS1005: ',' expected.
+pages/security:auth/login.tsx(78,19): error TS1005: ';' expected.
+pages/security:auth/login.tsx(79,18): error TS1005: ';' expected.
+pages/security:auth/login.tsx(80,7): error TS1109: Expression expected.
+pages/security:auth/login.tsx(80,8): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/login.tsx(84,5): error TS1005: ',' expected.
+pages/security:auth/login.tsx(88,21): error TS1005: ';' expected.
+pages/security:auth/login.tsx(89,19): error TS1005: ';' expected.
+pages/security:auth/login.tsx(90,7): error TS1109: Expression expected.
+pages/security:auth/login.tsx(90,8): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/login.tsx(104,1): error TS1109: Expression expected.
+pages/security:auth/login.tsx(105,1): error TS2657: JSX expressions must have one parent element.
+pages/security:auth/login.tsx(149,3): error TS1128: Declaration or statement expected.
+pages/security:auth/observer.tsx(17,1): error TS1109: Expression expected.
+pages/security:auth/observer.tsx(18,1): error TS2657: JSX expressions must have one parent element.
+pages/security:auth/observer.tsx(52,3): error TS1128: Declaration or statement expected.
+pages/security:auth/override.tsx(45,1): error TS1109: Expression expected.
+pages/security:auth/override.tsx(46,1): error TS2657: JSX expressions must have one parent element.
+pages/security:auth/override.tsx(55,5): error TS1128: Declaration or statement expected.
+pages/security:auth/revoke.tsx(54,5): error TS1005: ',' expected.
+pages/security:auth/revoke.tsx(58,13): error TS1005: ';' expected.
+pages/security:auth/revoke.tsx(59,13): error TS1005: ';' expected.
+pages/security:auth/revoke.tsx(60,16): error TS1005: ';' expected.
+pages/security:auth/revoke.tsx(61,11): error TS1005: ';' expected.
+pages/security:auth/revoke.tsx(62,6): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/revoke.tsx(66,5): error TS1005: ',' expected.
+pages/security:auth/revoke.tsx(70,13): error TS1005: ';' expected.
+pages/security:auth/revoke.tsx(71,16): error TS1005: ';' expected.
+pages/security:auth/revoke.tsx(72,6): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/revoke.tsx(81,1): error TS1109: Expression expected.
+pages/security:auth/revoke.tsx(82,1): error TS2657: JSX expressions must have one parent element.
+pages/security:auth/revoke.tsx(119,3): error TS1128: Declaration or statement expected.
+pages/security:auth/risk-center.tsx(25,5): error TS1005: ',' expected.
+pages/security:auth/risk-center.tsx(29,15): error TS1005: ';' expected.
+pages/security:auth/risk-center.tsx(30,18): error TS1005: ';' expected.
+pages/security:auth/risk-center.tsx(31,8): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/risk-center.tsx(77,5): error TS1005: ',' expected.
+pages/security:auth/risk-center.tsx(81,13): error TS1005: ';' expected.
+pages/security:auth/risk-center.tsx(82,16): error TS1005: ';' expected.
+pages/security:auth/risk-center.tsx(83,6): error TS1472: 'catch' or 'finally' expected.
+pages/security:auth/risk-center.tsx(91,1): error TS1109: Expression expected.
+pages/security:auth/risk-center.tsx(92,1): error TS2657: JSX expressions must have one parent element.
+pages/security:auth/risk-center.tsx(127,3): error TS1128: Declaration or statement expected.
+pages/social:referrals/invite-claim.tsx(36,1): error TS1109: Expression expected.
+pages/social:referrals/invite-claim.tsx(37,1): error TS2657: JSX expressions must have one parent element.
+pages/social:referrals/invite-claim.tsx(69,3): error TS1128: Declaration or statement expected.
+pages/social:referrals/invite-log.tsx(41,1): error TS1109: Expression expected.
+pages/social:referrals/invite-log.tsx(42,1): error TS2657: JSX expressions must have one parent element.
+pages/social:referrals/invite-log.tsx(80,3): error TS1128: Declaration or statement expected.
+pages/social:referrals/invite.tsx(81,5): error TS1005: ',' expected.
+pages/social:referrals/invite.tsx(85,15): error TS1005: ';' expected.
+pages/social:referrals/invite.tsx(86,17): error TS1005: ';' expected.
+pages/social:referrals/invite.tsx(87,22): error TS1005: ';' expected.
+pages/social:referrals/invite.tsx(88,9): error TS1109: Expression expected.
+pages/social:referrals/invite.tsx(88,10): error TS1472: 'catch' or 'finally' expected.
+pages/social:referrals/invite.tsx(108,5): error TS1005: ',' expected.
+pages/social:referrals/invite.tsx(112,21): error TS1005: ';' expected.
+pages/social:referrals/invite.tsx(113,18): error TS1005: ';' expected.
+pages/social:referrals/invite.tsx(114,19): error TS1005: ';' expected.
+pages/social:referrals/invite.tsx(115,19): error TS1005: ';' expected.
+pages/social:referrals/invite.tsx(116,11): error TS1109: Expression expected.
+pages/social:referrals/invite.tsx(116,12): error TS1472: 'catch' or 'finally' expected.
+pages/social:referrals/invite.tsx(128,1): error TS1109: Expression expected.
+pages/social:referrals/invite.tsx(129,1): error TS2657: JSX expressions must have one parent element.
+pages/social:referrals/invite.tsx(182,3): error TS1128: Declaration or statement expected.
+pages/social:referrals/redeem.tsx(43,5): error TS1005: ',' expected.
+pages/social:referrals/redeem.tsx(47,13): error TS1005: ';' expected.
+pages/social:referrals/redeem.tsx(48,16): error TS1005: ';' expected.
+pages/social:referrals/redeem.tsx(49,5): error TS1109: Expression expected.
+pages/social:referrals/redeem.tsx(49,6): error TS1472: 'catch' or 'finally' expected.
+pages/social:referrals/redeem.tsx(61,1): error TS1109: Expression expected.
+pages/social:referrals/redeem.tsx(62,1): error TS2657: JSX expressions must have one parent element.
+pages/social:referrals/redeem.tsx(99,3): error TS1128: Declaration or statement expected.
+pages/social:referrals/referral.tsx(53,1): error TS1109: Expression expected.
+pages/social:referrals/referral.tsx(54,1): error TS2657: JSX expressions must have one parent element.
+pages/social:referrals/referral.tsx(91,3): error TS1128: Declaration or statement expected.
+pages/social:referrals/teams.tsx(38,1): error TS1109: Expression expected.
+pages/social:referrals/teams.tsx(39,1): error TS2657: JSX expressions must have one parent element.
+pages/social:referrals/teams.tsx(68,3): error TS1128: Declaration or statement expected.
+pages/xp/xp-center.tsx(76,5): error TS1005: ',' expected.
+pages/xp/xp-center.tsx(80,13): error TS1005: ';' expected.
+pages/xp/xp-center.tsx(81,11): error TS1005: ';' expected.
+pages/xp/xp-center.tsx(82,13): error TS1005: ';' expected.
+pages/xp/xp-center.tsx(83,16): error TS1005: ';' expected.
+pages/xp/xp-center.tsx(84,13): error TS1005: ';' expected.
+pages/xp/xp-center.tsx(85,5): error TS1109: Expression expected.
+pages/xp/xp-center.tsx(85,6): error TS1472: 'catch' or 'finally' expected.
+pages/xp/xp-center.tsx(94,1): error TS1109: Expression expected.
+pages/xp/xp-center.tsx(95,1): error TS2657: JSX expressions must have one parent element.
+pages/xp/xp-center.tsx(134,3): error TS1128: Declaration or statement expected.
+pages/xp/xp-dashboard.tsx(112,1): error TS1109: Expression expected.
+pages/xp/xp-dashboard.tsx(113,1): error TS2657: JSX expressions must have one parent element.
+pages/xp/xp-dashboard.tsx(187,3): error TS1128: Declaration or statement expected.
+pages/xp/xp-history.tsx(104,1): error TS1109: Expression expected.
+pages/xp/xp-history.tsx(105,1): error TS2657: JSX expressions must have one parent element.
+pages/xp/xp-history.tsx(171,3): error TS1128: Declaration or statement expected.
+pages/xp/xp-hub.tsx(98,13): error TS1005: ')' expected.
+pages/xp/xp-kids.tsx(31,1): error TS1109: Expression expected.
+pages/xp/xp-kids.tsx(32,1): error TS2657: JSX expressions must have one parent element.
+pages/xp/xp-kids.tsx(47,7): error TS1128: Declaration or statement expected.
+pages/xp/xp-kids.tsx(79,3): error TS1128: Declaration or statement expected.
+pages/xp/xp-kids.tsx(154,1): error TS1128: Declaration or statement expected.
+pages/xp/xp-ledger.tsx(87,5): error TS1005: ',' expected.
+pages/xp/xp-ledger.tsx(92,11): error TS1005: ';' expected.
+pages/xp/xp-ledger.tsx(93,18): error TS1005: ';' expected.
+pages/xp/xp-ledger.tsx(94,5): error TS1109: Expression expected.
+pages/xp/xp-ledger.tsx(94,6): error TS1472: 'catch' or 'finally' expected.
+pages/xp/xp-quiz.tsx(71,1): error TS1109: Expression expected.
+pages/xp/xp-quiz.tsx(72,1): error TS2657: JSX expressions must have one parent element.
+pages/xp/xp-quiz.tsx(104,3): error TS1128: Declaration or statement expected.
+pages/xp/xp-test.tsx(42,1): error TS1109: Expression expected.
+pages/xp/xp-test.tsx(43,1): error TS2657: JSX expressions must have one parent element.
+pages/xp/xp-test.tsx(70,3): error TS1128: Declaration or statement expected.
+pages/xp/xp-tier.tsx(56,1): error TS1109: Expression expected.
+pages/xp/xp-tier.tsx(57,1): error TS2657: JSX expressions must have one parent element.
+pages/xp/xp-tier.tsx(79,3): error TS1128: Declaration or statement expected.
+src/components/CRTPanelTile.tsx(64,1): error TS1005: '}' expected.
+src/lib/deployEnginetoAlpaca.ts(44,3): error TS1137: Expression or comma expected.
+src/lib/deployEnginetoAlpaca.ts(49,20): error TS1005: ';' expected.
+src/lib/deployEnginetoAlpaca.ts(51,16): error TS1005: ';' expected.
+src/lib/deployEnginetoAlpaca.ts(52,20): error TS1005: ';' expected.
+src/lib/deployEnginetoAlpaca.ts(53,7): error TS1109: Expression expected.
+src/lib/deployEnginetoAlpaca.ts(54,5): error TS1128: Declaration or statement expected.
+src/lib/deployEnginetoAlpaca.ts(54,6): error TS1128: Declaration or statement expected.
+src/lib/deployEnginetoAlpaca.ts(59,5): error TS1005: ',' expected.
+src/lib/deployEnginetoAlpaca.ts(63,13): error TS1005: ';' expected.
+src/lib/deployEnginetoAlpaca.ts(64,6): error TS1472: 'catch' or 'finally' expected.
