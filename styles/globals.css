@@ -1,0 +1,277 @@
+* ======================================================================
+   Felena Theory – Global Styles (safe for Next.js + CSS Modules)
+   Last updated: 2025-08-12
+   Theme: retro-futurist / hacker terminal / CRT
+   ====================================================================== */
+
+/* ----- Brand Variables (Global Scope) ----- */
+:root {
+
+  --crt-green: #00ff99;
+  --crt-amber: #ffbf00;
+  --crt-pink: #ff0077;
+  --crt-cyan: #00e5ff;
+  --crt-red: #ff4444;
+
+
+  --bg: #000000; /* page background */
+  --fg: #b8ffd9; /* default text */
+  --muted: #9dffc9; /* soft neon-green for body copy */
+
+
+  --panel-border: rgba(0, 255, 153, 0.28);
+  --panel-grid: rgba(0, 255, 153, 0.08);
+  --panel-glow: rgba(0, 255, 153, 0.35);
+}
+
+/* ===== Global hard dark background ===== */
+:root {
+--bg: #000000;
+--fg: #e6fff5; /* soft neon‑green text */
+--muted: #9dffc9;
+}
+
+/* make sure the app fills the viewport so the bg shows */
+html, body, #__next {
+height: 100%;
+}
+
+/* kill any default white */
+html, body {
+background: var(--bg) !important;
+color: var(--fg);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+margin: 0;
+}
+
+/* links default */
+a { color: var(--muted); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* basic reset so lists don’t show browser bullets on your nav */
+* { box-sizing: border-box; }
+
+
+/* ======================================================================
+   CSS Reset / Base
+   ====================================================================== */
+/* ---- Global base (force dark) ---- */
+html, body, #__next {
+  height: 100%;
+}
+
+:root {
+  --bg: #000000;
+  --fg: #c9b8ff;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Orbitron', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ======================================================================
+   Typography
+   ====================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 255, 153, 0.35);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+  color: #b8ffd9;
+  border-color: rgba(0, 255, 153, 0.6);
+}
+
+/* ======================================================================
+   Buttons (baseline)
+   ====================================================================== */
+
+button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid rgba(0, 255, 153, 0.35);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  transition:
+    transform 0.06s ease,
+    box-shadow 0.12s ease,
+    background 0.12s ease;
+}
+
+button:hover {
+  background: rgba(0, 255, 153, 0.08);
+  border-color: rgba(0, 255, 153, 0.55);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* ======================================================================
+   Inputs
+   ====================================================================== */
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--fg);
+  background: #0b0b0b;
+  border: 1px solid rgba(0, 255, 153, 0.28);
+  border-radius: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: rgba(0, 255, 153, 0.6);
+  box-shadow: 0 0 3px rgba(0, 255, 153, 0.15);
+}
+
+/* ======================================================================
+   Utility Colors
+   ====================================================================== */
+
+.text-muted { color: var(--muted); }
+.text-green { color: var(--crt-green); }
+.text-amber { color: var(--crt-amber); }
+.text-pink  { color: var(--crt-pink); }
+.text-cyan  { color: var(--crt-cyan); }
+.text-red   { color: var(--crt-red); }
+
+/* ======================================================================
+   CRT-ish Panel Baseline (shared by multiple components)
+   ====================================================================== */
+
+.crt-panel {
+  background: #000;
+  color: var(--crt-green);
+  border: 1px solid var(--panel-border);
+  padding: 12px 14px;
+  border-radius: 10px;
+  box-shadow:
+    0 0 24px rgba(0, 255, 153, 0.06) inset,
+    0 0 6px rgba(0, 255, 153, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.crt-panel::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 2px,
+    transparent 3px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.25;
+}
+
+/* ======================================================================
+   Scanlines + Glitch
+   ====================================================================== */
+
+.scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03) 0px,
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 2px,
+    transparent 3px
+  );
+  pointer-events: none;
+  animation: scanlines 3s linear infinite;
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+  color: #f0f;
+  text-shadow:
+    1px 0 red,
+    -1px 0 blue;
+}
+
+/* ======================================================================
+   Scrollbar (WebKit)
+   ====================================================================== */
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 153, 0.4),
+    rgba(0, 255, 153, 0.6)
+  );
+  border: 1px solid rgba(0, 255, 153, 0.35);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 153, 0.6),
+    rgba(0, 255, 153, 0.8)
+  );
+}
+
+/* ======================================================================
+   Animations
+   ====================================================================== */
+
+@keyframes scanlines {
+  0%, 100% { opacity: 0.28; }
+  50% { opacity: 0.18; }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  60% { transform: translate(-1px, 0); }
+  80% { transform: translate(1px, 1px); }
+  100% { transform: translate(0); }
+}
