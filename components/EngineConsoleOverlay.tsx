@@ -1,93 +1,126 @@
+// src/components/EngineConsoleOverlay.tsx
+// Engine Console overlay: shows current XP, tier info, next tier, and ETA.
+// Uses a mock “tick” loop when mockMode is true so you can demo progression.
 
-// EngineConsoleOverlay.tsx – Tactical HUD Overlay for Engine Ops
+import React, { useEffect, useState } from 'react';
 
-import { useState, useEffect } from 'react';
-import { getCurrentTier, estimatePayoutTime } from '@/utils/progressMonitor';
-import { isOverrideEnabled, enableOverride } from '@/utils/overrideLogic';
-import { checkCrateMilestone } from '@/utils/crateTrigger';
-type Props = {
-  currentXP: number;
-  averageXPGain: number;
-  userId: string;
-  logs: string[];
+import { getCurrentTier, estimatePayoutTime } from '../utils/progressmonitor';
+
+type TierInfo = { name: string; xp: number };
+
+type EngineConsoleOverlayProps = {
+  /** Starting XP for the panel (default 0) */
+  startXP?: number;
+  /** Average XP gained per loop iteration (default 120) */
+  avgXPGainPerLoop?: number;
+  /** Seconds between loop iterations (default 30s) */
+  loopIntervalSeconds?: number;
+  /** If true, runs a mock progression loop client-side */
+  mockMode?: boolean;
 };
 
-export default function EngineConsoleOverlay({ currentXP, averageXPGain, userId, logs }: Props) {
-  const [override, setOverride] = useState(false);
-  const { current, next } = getCurrentTier(currentXP);
-  const { etaText } = estimatePayoutTime(currentXP, averageXPGain);
+const DEFAULTS = {
+  startXP: 0,
+  avgXPGainPerLoop: 120,
+  loopIntervalSeconds: 30,
+} as const;
 
+export default function EngineConsoleOverlay({
+  startXP = DEFAULTS.startXP,
+  avgXPGainPerLoop = DEFAULTS.avgXPGainPerLoop,
+  loopIntervalSeconds = DEFAULTS.loopIntervalSeconds,
+  mockMode = false,
+}: EngineConsoleOverlayProps) {
+  const [currentXP, setCurrentXP] = useState<number>(startXP);
+  const [{ current, next }, setTierPair] = useState<{ current: TierInfo; next: TierInfo | null }>(
+    () => {
+      const pair = getCurrentTier(startXP);
+      return { current: pair.current, next: pair.next ?? null };
+    },
+  );
+  const [etaText, setEtaText] = useState<string>(() =>
+    estimatePayoutTime(startXP, avgXPGainPerLoop, loopIntervalSeconds),
+  );
+
+  // Mock loop to demonstrate XP progression
   useEffect(() => {
-  const result = checkCrateMilestone(currentXP);
-  if (result.triggered) {
-  }
-}, [currentXP]);
+    if (!mockMode) return;
 
+    const ms = Math.max(1, loopIntervalSeconds) * 1000;
+    const id = setInterval(() => {
+      setCurrentXP((prev) => prev + avgXPGainPerLoop);
+    }, ms);
+
+    return () => clearInterval(id);
+  }, [mockMode, loopIntervalSeconds, avgXPGainPerLoop]);
+
+  // Recompute tier + ETA when XP or inputs change
   useEffect(() => {
-    const check = async () => {
-      const active = await isOverrideEnabled(userId);
-      setOverride(active);
-    };
-    check();
-  }, [userId]);
+    const pair = getCurrentTier(currentXP);
+    setTierPair({ current: pair.current, next: pair.next ?? null });
 
-  const handleEnableOverride = async () => {
-    const success = await enableOverride(userId);
-    if (success) setOverride(true);
-  };
+    setEtaText(estimatePayoutTime(currentXP, avgXPGainPerLoop, loopIntervalSeconds));
+  }, [currentXP, avgXPGainPerLoop, loopIntervalSeconds]);
+
+  // Progress to next tier (0–100)
+  const progressPct = (() => {
+    if (!next) return 100;
+    const span = Math.max(1, next.xp - current.xp);
+    const gained = Math.max(0, currentXP - current.xp);
+    return Math.min(100, Math.round((gained / span) * 100));
+  })();
 
   return (
-    <div style={{
-      position: 'fixed',
-      bottom: 20,
-      right: 20,
-      background: '#111',
-      color: '#0f0',
-      padding: '1rem',
-      borderRadius: '12px',
-      width: '360px',
-      fontFamily: 'monospace',
-      fontSize: '0.85rem',
-      zIndex: 9999,
-      boxShadow: '0 0 12px #0f0'
-    }}>
-      <div><strong>💻 ENGINE CONSOLE</strong></div>
-      <div>🧠 Mode: {override ? 'OVERRIDE' : 'CRUISE'}</div>
-      <div>💰 XP: {currentXP} ({current?.name})</div>
-      <div>🎯 Next: {next?.name || 'MAX'} @ {next?.xp || '∞'} XP</div>
-      <div>⏱ ETA: {etaText}</div>
+    <div className="p-4 bg-black/70 text-green-400 font-mono rounded-md border border-green-500 w-full max-w-3xl">
+      <h2 className="text-lg font-bold mb-2">Engine Console</h2>
 
-      {!override && (
-        <button
-          onClick={handleEnableOverride}
-          style={{
-            marginTop: '0.5rem',
-            background: '#0f0',
-            color: '#000',
-            fontWeight: 'bold',
-            border: 'none',
-            padding: '6px 12px',
-            cursor: 'pointer',
-            borderRadius: '8px'
-          }}
-        >
-          ENABLE OVERRIDE (25 XP)
-        </button>
-      )}
+      <div className="space-y-1">
+        <div>
+          <span className="font-bold">Current XP:</span>{' '}
+          <span>{currentXP.toLocaleString()} XP</span>
+        </div>
+        <div>
+          <span className="font-bold">Current Tier:</span>{' '}
+          <span>
+            {current.name} ({current.xp.toLocaleString()} XP)
+          </span>
+        </div>
 
-      <div style={{
-        marginTop: '0.75rem',
-        maxHeight: '120px',
-        overflowY: 'auto',
-        background: '#000',
-        padding: '6px',
-        borderRadius: '8px',
-        border: '1px solid #0f0'
-      }}>
-        {logs.slice(-6).reverse().map((log, i) => (
-          <div key={i}>▶ {log}</div>
-        ))}
+        {next ? (
+          <>
+            <div>
+              <span className="font-bold">Next Tier:</span>{' '}
+              <span>
+                {next.name} ({next.xp.toLocaleString()} XP)
+              </span>
+            </div>
+            <div className="mt-2">
+              <div className="h-2 w-full bg-green-900/40 rounded">
+                <div
+                  className="h-2 bg-green-400 rounded"
+                  style={{ width: `${progressPct}%` }}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-valuenow={progressPct}
+                  role="progressbar"
+                />
+              </div>
+              <div className="text-xs mt-1">Progress: {progressPct}%</div>
+            </div>
+            <div className="mt-1">
+              <span className="font-bold">ETA to Next Tier:</span> <span>{etaText}</span>
+            </div>
+          </>
+        ) : (
+          <div className="mt-2 text-yellow-300">Max tier reached.</div>
+        )}
       </div>
+
+      {mockMode && (
+        <div className="mt-3 text-yellow-400 text-xs">
+          Mock mode enabled (simulated +{avgXPGainPerLoop} XP every {loopIntervalSeconds}s).
+        </div>
+      )}
     </div>
   );
 }
