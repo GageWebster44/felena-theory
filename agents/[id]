@@ -1,0 +1,107 @@
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { supabase } from '@/utils/supabaseClient';
+import styles from '@/styles/crtLaunch.module.css';
+import { withAdminGate } from '@/components/withRoleGate';
+import { CSVLink } from 'react-csv';
+
+const agentMap = {
+  echomind: 'Echo — Anomaly Detection',
+  vanta: 'Vanta — Case Generation / Compliance',
+  synapse: 'Synapse — Signal Routing / Alerts',
+  archivus: 'Archivus — Data Archiving / Logs',
+  delta: 'Delta — Notifications / Messaging',
+  citadel: 'Citadel — Security / Access Bans',
+  vector: 'Vector — Network Pattern Detection',
+  orion: 'Orion — Intelligence / Dashboard Insights',
+  cycle: 'Cycle — Automated Task Runner'
+};
+
+function AgentProfile() {
+  const router = useRouter();
+  const { id } = router.query;
+  const [logs, setLogs] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [filter, setFilter] = useState('');
+  const [status, setStatus] = useState('active');
+  const [lastActive, setLastActive] = useState(null);
+
+  const fetchLogs = async () => {
+    if (!id) return;
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('audit_logs')
+      .select('*')
+      .eq('user_id', id)
+      .order('timestamp', { ascending: false })
+      .limit(100);
+    if (!error) {
+      setLogs(data);
+      if (data.length > 0) setLastActive(data[0].timestamp);
+    }
+    setLoading(false);
+  };
+
+  const toggleStatus = async () => {
+    const newStatus = status === 'paused' ? 'active' : 'paused';
+    setStatus(newStatus);
+    await supabase.from('audit_logs').insert({
+      user_id: 'cycle',
+      action: `Admin toggled ${id} to ${newStatus}`,
+      timestamp: new Date().toISOString()
+    });
+  };
+
+  const filtered = filter
+    ? logs.filter(log => JSON.stringify(log).toLowerCase().includes(filter.toLowerCase()))
+    : logs;
+
+  const csvExport = logs.map(l => ({
+    timestamp: l.timestamp,
+    action: l.action
+  }));
+
+  useEffect(() => {
+    fetchLogs();
+  }, [id]);
+
+  return (
+    <div className={styles.crtFrame}>
+      <h1 className={styles.crtTitle}>Agent Profile: {id}</h1>
+      <p className={styles.crtText}>{agentMap[id] || 'Unknown Agent'}</p>
+      <p className={styles.crtText}>Status: {status}</p>
+      <p className={styles.crtText}>Last Active: {lastActive ? new Date(lastActive).toLocaleString() : '—'}</p>
+
+      <div className={styles.crtMenu}>
+        <button onClick={toggleStatus} className={styles.crtButton}>
+          {status === 'paused' ? '▶ Resume Agent' : '⏸ Pause Agent'}
+        </button>
+        <input
+          type="text"
+          placeholder="Search logs..."
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          className={styles.crtInput}
+        />
+        <CSVLink data={csvExport} filename={`agent_${id}_logs.csv`} className={styles.crtButton}>
+          Export Logs
+        </CSVLink>
+      </div>
+
+      <h2 className={styles.crtTitle}>Recent Activity</h2>
+      {loading ? (
+        <p className={styles.crtText}>Loading...</p>
+      ) : (
+        <div className={styles.crtScrollBox}>
+          {filtered.map((log, i) => (
+            <pre key={i} className={styles.crtText}>
+              {log.timestamp} — {log.action}
+            </pre>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default withAdminGate(AgentProfile);

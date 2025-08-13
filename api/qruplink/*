@@ -1,0 +1,8 @@
+mport { rateLimit } from '@/utils/rateLimit';
+
+// inside handler:
+const limit = rateLimit(req, { windowMs: 60_000, max: 30 });
+if (!limit.ok) {
+  res.setHeader('Retry-After', Math.ceil(limit.resetMs / 1000));
+  return res.status(429).json({ error: 'Too Many Requests' });
+}

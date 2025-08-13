@@ -1,0 +1,8 @@
+import { rateLimit } from '@src/utils/rateLimit';
+
+// inside handler:
+const limit = rateLimit(req, { windowMs: 300_000, max: 3 }); // 5 min window
+if (!limit.ok) {
+  res.setHeader('Retry-After', Math.ceil(limit.resetMs / 1000));
+  return res.status(429).json({ error: 'Too Many Requests' });
+}
