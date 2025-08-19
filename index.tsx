@@ -1,141 +1,172 @@
 // src/pages/index.tsx
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from '@/styles/crtLaunch.module.css'; // uses your CRT module (no Tailwind)
+import Head from "next/head";
+import Link from "next/link";
+import styles from "@/styles/index.module.css";
 
-export default function LandingPage() {
-  return (
-    <>
-      <Head>
-        <title>Felena Theory</title>
-        <meta name="description" content="Felena Theory — a retro‑futurist progression system with a cinematic terminal vibe." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+export default function Home() {
+return (
+<div className={styles.page}>
+<Head>
+<title>THE FELENA THEORY</title>
+<meta name="description" content="The Financial Reactor." />
+</Head>
 
-      {/* Screen frame + scanlines + grid */}
-      <div className={styles.crtScreen}>
-        <div className={styles.crtGrid} aria-hidden />
+<main className={styles.wrap}>
+{/* Masthead */}
+<header className={styles.masthead}>
+<h1 className={styles.brandTitle}>THE FELENA THEORY</h1>
+<span className={styles.brandUnderline} aria-hidden="true" />
+<p className={styles.tag}>The Financial Reactor.</p>
 
-        {/* TOP BAR / LOGO */}
-        <header
-          className={styles.panel}
-          style={{ marginBottom: 20, display: 'flex', alignItems: 'center', gap: 12 }}
-        >
-          <div className={styles.panelHeader}>Felena Theory</div>
-          <div className={styles.panelBody} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{ width: 28, height: 28, position: 'relative' }}>
-              <Image
-                src="/felena-brand-kit/felena-logo-final.png"
-                alt="Felena Theory logo"
-                fill
-                sizes="28px"
-                style={{ objectFit: 'contain' }}
-                priority
-              />
-            </div>
-            <span className={styles.badge}>PUBLIC MODE</span>
-          </div>
-        </header>
+<div className={styles.ctaRow}>
+<Link href="/preorder" className={styles.btn}>
+Pre-Order Felena Vision
+</Link>
+<Link href="/becomeanoperator" className={styles.btn}>
+Become An Operator
+</Link>
+</div>
+</header>
 
-        {/* HERO */}
-        <section className={styles.panel} style={{ marginBottom: 20 }}>
-          <div className={styles.panelBody}>
-            <h1 className={styles.heroTitle}>
-              PLAY. EARN XP. <br /> UNLOCK ENGINES.
-            </h1>
-            <p className={styles.heroSub}>
-              A retro‑futurist progression system with a cinematic terminal vibe.
-              Public marketing mode — no dashboards here. Just the door in.
-            </p>
+{/* 3×3 Control Grid */}
+<section
+className={styles.grid}
+style={{ gridTemplateColumns: "repeat(3, minmax(260px, 1fr))" }}
+>
+{/* 1. CASINO */}
+<article className={styles.card}>
+<h3>Casino</h3>
+<p>
+Tables & Slots — Blackjack, Roulette, Baccarat, Craps, Video Poker,
+plus themed slot banks.
+</p>
+<div>
+<Link className={styles.cardCta} href="/casino">
+Open Casino →
+</Link>
+</div>
+</article>
 
-            <div className={styles.ctaRow}>
-              <Link href="/auth" className={styles.btnPrimary} aria-label="Sign up or log in">
-                Sign Up / Log In
-              </Link>
-              <a href="#about" className={styles.btnGhost} aria-label="Learn more about Felena Theory">
-                Learn More
-              </a>
-            </div>
+{/* 2. ARCADE */}
+<article className={styles.card}>
+<h3>Arcade</h3>
+<p>
+Mobile-style games — strategy, puzzle, endless runner, crash & other
+generic algorithms with dynamic leveling.
+</p>
+<div>
+<Link className={styles.cardCta} href="/arcade">
+Enter Arcade →
+</Link>
+</div>
+</article>
 
-            <div className={styles.kvRow}>
-              <Stat label="LATENCY" value="12.3ms" />
-              <Stat label="SIGNAL" value="STRONG" />
-              <Stat label="CHANNEL" value="FT‑01" />
-            </div>
-          </div>
-        </section>
+{/* 3. KEYCARD */}
+<article className={styles.card}>
+<h3>Keycard</h3>
+<p>
+Alias • XP • Tier • Badges • Referral. Includes QR Uplink for
+Keycard↔Keycard sharing.
+</p>
+<div>
+<Link className={styles.cardCta} href="/keycard">
+Open Keycard →
+</Link>
+</div>
+</article>
 
-        {/* FEATURE STRIP */}
-        <section className={styles.featureGrid}>
-          <article className={styles.panel}>
-            <div className={styles.panelHeader}>FelenaVision</div>
-            <div className={styles.panelBody}>
-              <p style={{ marginBottom: 10 }}>
-                Pre‑order access to FelenaVision — our cinematic telemetry layer for replays,
-                highlights, and spectral signal overlays.
-              </p>
-              <Link href="/auth" className={styles.btnGhost}>Pre‑Order →</Link>
-            </div>
-          </article>
+{/* 4. PHONEBOOTH */}
+<article className={styles.card}>
+<h3>PhoneBooth</h3>
+<p>Deposit • Withdraw • Redeem Gift Cards • P2P XP transfers • Ledger.</p>
+<div>
+<Link className={styles.cardCta} href="/phonebooth">
+Step Inside →
+</Link>
+</div>
+</article>
 
-          <article className={styles.panel}>
-            <div className={styles.panelHeader}>Kidzone</div>
-            <div className={styles.panelBody}>
-              <p style={{ marginBottom: 10 }}>
-                Curated safe‑mode for younger players. XP accrues, while social & cashout
-                features remain locked behind guardian approval.
-              </p>
-              <Link href="/auth" className={styles.btnGhost}>Enter Kidzone →</Link>
-            </div>
-          </article>
+{/* 5. ENGINE RENTALS */}
+<article className={styles.card}>
+<h3>Algorithm Engine Rentals</h3>
+<p>
+Alpaca autonomous engines. Pick a strategy, stake XP, track
+performance.
+</p>
+<div>
+<Link className={styles.cardCta} href="/engine-grid">
+Open Engine Grid →
+</Link>
+</div>
+</article>
 
-          <article className={styles.panel}>
-            <div className={styles.panelHeader}>Security & Compliance</div>
-            <div className={styles.panelBody}>
-              <ul className={styles.bulletList}>
-                <li>Agreement receipts & audit trails</li>
-                <li>Broker KYC handled via partner (if cashout is offered)</li>
-                <li>Guardian locks for child accounts</li>
-              </ul>
-              <Link href="/auth" className={styles.btnGhost}>Review Agreement →</Link>
-            </div>
-          </article>
-        </section>
+{/* 6. ARENA */}
+<article className={styles.card}>
+<h3>Felena Arena</h3>
+<p>Ranked duels & seasonal events. Prove skill and climb the leaderboard.</p>
+<div>
+<Link className={styles.cardCta} href="/arena">
+Enter Arena →
+</Link>
+</div>
+</article>
 
-        {/* ABOUT */}
-        <section id="about" className={styles.panel} style={{ marginTop: 20 }}>
-          <div className={styles.panelHeader}>About Felena Theory</div>
-          <div className={styles.panelBody}>
-            <p>
-              Felena Theory is a tactical progression system. Players route XP through simulated
-              engines. Outcomes log to a personal ledger for audit and season play. XP is an in‑app
-              resource — not cash, crypto, or fiat. Any real‑world cashout (if offered) requires
-              identity verification (KYC) and a brokerage account with our partner.
-            </p>
-          </div>
-        </section>
+{/* 7. LEARN */}
+<article className={styles.card}>
+<h3>Learn-to-Earn</h3>
+<p>Trades & skills progression (levels 1–10). Earn XP by mastering tracks.</p>
+<div>
+<Link className={styles.cardCta} href="/learn">
+Enter Lab →
+</Link>
+</div>
+</article>
 
-        {/* STATUS BAR */}
-        <footer className={styles.statusBar} role="status" aria-live="polite">
-          <span>BOOT OK</span>
-          <span>GRID SYNC</span>
-          <span>SIGNAL LOCK</span>
-          <span>SECURE SESSION</span>
-          <span>SYSTEM FEED</span>
-          <span>ENGINE ROUTER</span>
-        </footer>
-      </div>
-    </>
-  );
-}
+{/* 8. SPORTSBOOK */}
+<article className={styles.card}>
+<h3>Sportsbook</h3>
+<p>
+American & international markets. Straight bets, parlays, props — XP
+stakes with house rules.
+</p>
+<div>
+<Link className={styles.cardCta} href="/sportsbook">
+Open Sportsbook →
+</Link>
+</div>
+</article>
 
-/** Small stat pill used in the hero */
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div style={{ display: 'grid', gap: 4 }}>
-      <span style={{ fontSize: 12, opacity: 0.8 }}>{label}</span>
-      <strong style={{ fontSize: 16 }}>{value}</strong>
-    </div>
-  );
+{/* 9. ABOUT */}
+<article className={styles.card}>
+<h3>About Us</h3>
+<p>
+What Felena is, how the Reactor works, and our proof-first mission.
+</p>
+<div>
+<Link className={styles.cardCta} href="/about">
+Learn More →
+</Link>
+</div>
+</article>
+</section>
+
+{/* Footer */}
+<footer className={styles.footer}>
+<div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+<span>© {new Date().getFullYear()} Felena Theory</span>
+<span>Felena Holdings LLC</span>
+<span>FelenaTheory@gmail.com</span>
+</div>
+<div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+<Link href="/terms" className={styles.cardCta}>
+Terms & Disclosures
+</Link>
+<Link href="/preorder" className={styles.cardCta}>
+Pre-Order
+</Link>
+</div>
+</footer>
+</main>
+</div>
+);
 }

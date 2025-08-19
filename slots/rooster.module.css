@@ -1,0 +1,92 @@
+/* src/styles/slots/rooster.module.css */
+:root { --cell: 92px; --gap: 10px; }
+
+.shell { display:grid; gap:16px; justify-items:center; color:#eafff6; padding:22px; }
+.header { text-align:center; text-shadow:0 0 12px rgba(255,120,90,.25); }
+.title { font-weight:900; letter-spacing:3px; font-size:2.2rem; }
+.title span { color:#ff8b5a; margin-right:8px; text-shadow:0 0 14px rgba(255,120,70,.35); }
+.meta { opacity:.9; }
+
+.cabinet { position:relative; display:grid; gap:14px; }
+.frameGlow { position:absolute; inset:-20px -20px 60px -20px; background:radial-gradient(50% 45% at 50% 35%, rgba(255,120,80,.22), transparent 70%); filter:blur(22px); pointer-events:none; }
+
+.screen {
+  position:relative; overflow:hidden; border-radius:18px; padding:18px 18px 90px 18px;
+  background:linear-gradient(180deg,#150b07 0%, #0b0705 100%);
+  outline:1px solid rgba(255,140,110,.25);
+  box-shadow: inset 0 0 0 1px rgba(255,130,100,.2), 0 26px 70px rgba(0,0,0,.55);
+}
+
+.crtOverlay {
+  position:absolute; inset:0; pointer-events:none;
+  background:
+    repeating-linear-gradient(to bottom, rgba(0,0,0,.22) 0 1px, transparent 2px 4px),
+    radial-gradient(120% 90% at 50% 0%, rgba(0,0,0,0.25), rgba(0,0,0,0.65));
+  mix-blend-mode:multiply; opacity:.46;
+}
+
+/* Board */
+.board { position:relative; display:grid; gap: var(--gap); width: calc(var(--cell) * 5 + var(--gap) * 4); margin:0 auto; }
+.row   { display:grid; grid-template-columns: repeat(5, var(--cell)); gap: var(--gap); }
+.cell  {
+  width: var(--cell); height: var(--cell);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,180,150,.06), rgba(0,0,0,.35));
+  outline: 1px dashed rgba(255,160,120,.22);
+  display:grid; place-items:center;
+  position:relative; overflow:hidden;
+  transition: transform .15s ease;
+}
+.filled { outline-style: solid; outline-color: rgba(255,170,130,.35); }
+
+.cash {
+  width:70%; height:70%; border-radius:12px;
+  background: linear-gradient(180deg, #ffe6a8, #ffc86a);
+  box-shadow: 0 8px 22px rgba(255,180,90,.35), inset 0 0 0 2px rgba(255,240,210,.55);
+  display:grid; place-items:center;
+  transform: scale(.9); animation: pop .22s ease-out forwards;
+}
+.val { color:#3a1d08; font-weight:900; text-shadow: 0 1px 0 rgba(255,255,255,.35); }
+
+.collector {
+  width:70%; height:70%; border-radius:999px;
+  background: radial-gradient(60% 60% at 50% 40%, #ffd186, #ff7d5a 70%);
+  box-shadow: 0 8px 24px rgba(255,120,70,.35);
+  display:grid; place-items:center;
+  font-size: 28px;
+  animation: pop .22s ease-out forwards;
+}
+
+.jp {
+  width:70%; height:70%; border-radius:12px; display:grid; place-items:center;
+  color:#2b1307; font-weight:900;
+  background: linear-gradient(180deg, #ffd86b, #ffb14d);
+  box-shadow: 0 10px 24px rgba(255,200,90,.25), inset 0 0 0 1px rgba(0,0,0,.15);
+  animation: pop .22s ease-out forwards;
+}
+.jpMini  { background: linear-gradient(180deg, #d5f0ff, #9fd7ff); }
+.jpMinor { background: linear-gradient(180deg, #e8ffd5, #bbffa2); }
+.jpMajor { background: linear-gradient(180deg, #ffe4d5, #ffb79f); }
+.jpGrand { background: linear-gradient(180deg, #fff4bf, #ffd86b); }
+
+@keyframes pop { to { transform: scale(1); } }
+
+/* HUD */
+.hud {
+  position:absolute; left:0; right:0; bottom:0; height:86px; z-index:2;
+  display:grid; grid-template-columns: 1fr 1fr 2fr; gap:12px; padding:10px 14px;
+  background:linear-gradient(180deg, rgba(0,0,0,0), rgba(36,18,6,.9));
+  border-top:1px solid rgba(255,150,110,.18);
+}
+.stat { display:grid; align-content:center; justify-items:center; }
+.stat label { font-size:.72rem; letter-spacing:1px; opacity:.8; }
+.statVal { font-weight:900; font-variant-numeric: tabular-nums; }
+.controls { display:grid; align-content:center; justify-items:end; }
+
+.spinBtn {
+  padding:12px 22px; border:0; border-radius:12px; cursor:pointer;
+  font-weight:900; letter-spacing:1px; color:#2b1a04;
+  background:linear-gradient(180deg, #ffd86b, #ffb14d);
+  box-shadow:0 10px 24px rgba(255,200,90,.25), inset 0 0 0 1px rgba(0,0,0,.15);
+}
+.spinBtn:disabled { opacity:.6; cursor:default; }

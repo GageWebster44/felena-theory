@@ -1,0 +1,333 @@
+/* src/styles/slots/slots.module.css
+Unifies slot page styling + theme variables.
+*/
+
+/* ========== Base layout ========== */
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.nav {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding: clamp(16px, 4vw, 32px) 12px 8px;
+  text-align: center;
+}
+
+.title {
+  font-weight: 900;
+  letter-spacing: .06em;
+  line-height: 1.05;
+  font-size: clamp(34px, 6vw, 84px);
+  color: var(--title, #fff);
+  text-shadow:
+    0 0 14px var(--accent, #26ff88),
+    0 0 28px var(--accent, #26ff88);
+  margin: 0 0 6px;
+  font-family: var(--title-font, ui-sans-serif, system-ui, "Inter", Arial);
+}
+
+.subtitle, .tagline {
+  margin: 0;
+  color: var(--subtle, #bdfed9);
+  font-weight: 700;
+  letter-spacing: .08em;
+  opacity: .95;
+}
+.tagline { margin-top: 6px; opacity: .9; }
+
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Cabinet zone */
+.zone {
+  display: grid;
+  justify-content: center;
+  gap: 18px;
+  margin: 10px auto 0;
+  padding: 0 10px 24px;
+  min-height: 60vh; /* full-screen feel */
+}
+
+.cabinet {
+  --pad: 18px;
+  width: min(98vw, 1200px);
+  margin: 0 auto;
+  padding: var(--pad);
+  border-radius: 20px;
+  border: 1px solid var(--bezel, rgba(38,255,136,.32));
+  background:
+    radial-gradient(140% 120% at 50% 0%, rgba(255,255,255,.04), rgba(0,0,0,.55)),
+    linear-gradient(180deg, rgba(20,20,20,.55), rgba(0,0,0,.82));
+  box-shadow:
+    inset 0 0 32px var(--bezel, rgba(38,255,136,.32)),
+    0 0 26px rgba(0,0,0,.45),
+    0 0 80px var(--bezel, rgba(38,255,136,.32));
+  animation: pulseGlow 3.6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: inset 0 0 28px var(--bezel), 0 0 26px rgba(0,0,0,.45), 0 0 70px var(--bezel); }
+  50% { box-shadow: inset 0 0 36px var(--bezel), 0 0 26px rgba(0,0,0,.45), 0 0 96px var(--bezel); }
+}
+
+.rules {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid var(--bezel, rgba(38,255,136,.32));
+  background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.78));
+  box-shadow: inset 0 0 18px var(--bezel, rgba(38,255,136,.32));
+  color: var(--subtle, #bdfed9);
+}
+.rules h3 { margin: 0 0 6px; color: var(--subtle); }
+
+/* Page background */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--overlay), var(--bg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Utility card + elements used by SlotRenderer */
+.card {
+  border: 1px solid var(--bezel, rgba(38,255,136,.32));
+  border-radius: 16px;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.78));
+  box-shadow: inset 0 0 18px var(--bezel, rgba(38,255,136,.18));
+}
+.cardTitle {
+  margin: 0 0 6px;
+  color: var(--title, #fff);
+  font-weight: 800;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid var(--bezel, rgba(38,255,136,.25));
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--subtle, #bdfed9);
+  background: rgba(0,20,8,.35);
+}
+
+.cardCta {
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  border: 1px solid var(--bezel, rgba(38,255,136,.4));
+  background: radial-gradient(120% 120% at 50% 0%, rgba(38,255,136,.2), rgba(0,0,0,.6));
+  cursor: pointer;
+}
+.cardCta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 20px var(--bezel, rgba(38,255,136,.4));
+}
+
+.numberInput {
+  width: 90px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,255,136,.25);
+  background: rgba(0,20,8,.35);
+  color: #eaffe9;
+}
+
+/* Symbol cell */
+.cell {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,255,136,.3);
+  background: linear-gradient(180deg, rgba(0,255,136,.1), rgba(0,0,0,.35));
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #a9ffd1;
+}
+
+/* ========== Theme presets (variables) ========== */
+
+/* default */
+.themeDefault {
+  --accent: #26ff88;
+  --bezel: rgba(38,255,136,.32);
+  --subtle: #bdfed9;
+  --bg: radial-gradient(90% 70% at 50% 30%, rgba(0,40,10,.55), #000);
+  --overlay: radial-gradient(60px 60px at 15% 75%, rgba(38,255,136,.07), transparent),
+              radial-gradient(80px 80px at 75% 25%, rgba(38,255,136,.05), transparent);
+  --title-font: "Rajdhani", ui-sans-serif, system-ui, Arial;
+}
+
+/* horror */
+.horror {
+  --accent: #9a7bff;
+  --bezel: rgba(154,123,255,.35);
+  --subtle: #d9caff;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(70,0,100,.55), #000);
+  --overlay: radial-gradient(60px 60px at 20% 40%, rgba(154,123,255,.08), transparent),
+             radial-gradient(80px 80px at 80% 70%, rgba(154,123,255,.06), transparent);
+  --title-font: "Cinzel", "Trajan Pro", serif;
+}
+
+/* jukebox / music */
+.jukebox, .music {
+  --accent: #26ffd0;
+  --bezel: rgba(38,255,208,.35);
+  --subtle: #a9ffe9;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,50,40,.55), #000);
+  --overlay: repeating-linear-gradient(90deg, rgba(38,255,208,.05) 0 2px, transparent 2px 8px);
+  --title-font: "Fredoka", "Comfortaa", system-ui, sans-serif;
+}
+
+/* neon / city */
+.neon {
+  --accent: #26ff88;
+  --bezel: rgba(38,255,136,.32);
+  --subtle: #bdfed9;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,40,10,.55), #000);
+  --overlay: radial-gradient(60px 60px at 15% 75%, rgba(38,255,136,.07), transparent),
+             radial-gradient(80px 80px at 75% 25%, rgba(38,255,136,.05), transparent);
+  --title-font: "Orbitron", "Rajdhani", system-ui, sans-serif;
+}
+
+/* space / galaxy */
+.space, .galaxy {
+  --accent: #24c6ff;
+  --bezel: rgba(36,198,255,.35);
+  --subtle: #b5e7ff;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,24,48,.6), #000);
+  --overlay:
+    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.35), transparent),
+    radial-gradient(2px 2px at 60% 10%, rgba(255,255,255,.28), transparent),
+    radial-gradient(3px 3px at 80% 70%, rgba(255,255,255,.22), transparent);
+  --title-font: "Orbitron", system-ui, sans-serif;
+}
+
+/* farm / barnyard / savannah */
+.farm, .barnyard, .savannah {
+  --accent: #ffe66d;
+  --bezel: rgba(255,230,109,.35);
+  --subtle: #fff3b8;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(64,48,0,.55), #000);
+  --overlay: repeating-linear-gradient(45deg, rgba(255,230,109,.06) 0 8px, transparent 8px 16px);
+  --title-font: "Baloo 2", "Nunito", system-ui, cursive;
+}
+
+/* cantina / fiesta */
+.cantina {
+  --accent: #ffcf33;
+  --bezel: rgba(255,207,51,.35);
+  --subtle: #ffe7a1;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(70,40,0,.55), #000);
+  --overlay: radial-gradient(60px 60px at 80% 30%, rgba(255,207,51,.07), transparent);
+  --title-font: "Bungee", "Luckiest Guy", system-ui, cursive;
+}
+
+/* cyber / hacker */
+.cyber, .hacker {
+  --accent: #64ffd9;
+  --bezel: rgba(100,255,217,.32);
+  --subtle: #bfffee;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(2,38,38,.6), #000);
+  --overlay: linear-gradient(180deg, rgba(100,255,217,.06), transparent);
+  --title-font: "Share Tech Mono", "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* dungeon / mines */
+.dungeon, .mines {
+  --accent: #7bdfff;
+  --bezel: rgba(123,223,255,.32);
+  --subtle: #c8f1ff;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,28,36,.6), #000);
+  --overlay: radial-gradient(70px 70px at 20% 70%, rgba(123,223,255,.06), transparent);
+  --title-font: "UnifrakturCook", "Cinzel", serif;
+}
+
+/* volcano */
+.volcano {
+  --accent: #ff6a3d;
+  --bezel: rgba(255,106,61,.35);
+  --subtle: #ffc9b6;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(60,8,0,.6), #000);
+  --overlay: radial-gradient(80px 80px at 60% 30%, rgba(255,106,61,.08), transparent);
+  --title-font: "Bebas Neue", "Oswald", system-ui, sans-serif;
+}
+
+/* arctic */
+.arctic {
+  --accent: #9bddff;
+  --bezel: rgba(155,221,255,.35);
+  --subtle: #e4f6ff;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,40,70,.6), #000);
+  --overlay: radial-gradient(110px 110px at 20% 25%, rgba(155,221,255,.08), transparent);
+  --title-font: "Nunito", "Inter", system-ui, sans-serif;
+}
+
+/* cats */
+.cats {
+  --accent: #ffcaea;
+  --bezel: rgba(255,202,234,.35);
+  --subtle: #ffe4f6;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(60,0,45,.55), #000);
+  --overlay: radial-gradient(60px 60px at 70% 60%, rgba(255,202,234,.06), transparent);
+  --title-font: "Pacifico", "Baloo 2", cursive;
+}
+
+/* ocean */
+.ocean {
+  --accent: #39b6ff;
+  --bezel: rgba(57,182,255,.33);
+  --subtle: #c3e9ff;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,40,70,.6), #000);
+  --overlay: radial-gradient(60px 60px at 30% 80%, rgba(57,182,255,.07), transparent);
+  --title-font: "Varela Round", "Nunito", system-ui, sans-serif;
+}
+
+/* racer */
+.racer {
+  --accent: #79ff6b;
+  --bezel: rgba(121,255,107,.33);
+  --subtle: #d8ffd4;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,45,0,.6), #000);
+  --overlay: repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 8px, transparent 8px 16px);
+  --title-font: "Russo One", "Oswald", system-ui, sans-serif;
+}
+
+/* superhero */
+.superhero {
+  --accent: #7fffd4;
+  --bezel: rgba(127,255,212,.32);
+  --subtle: #dbfff3;
+  --bg: radial-gradient(90% 70% at 50% 20%, rgba(0,40,48,.6), #000);
+  --overlay: radial-gradient(70px 70px at 80% 20%, rgba(127,255,212,.08), transparent);
+  --title-font: "Bangers", "Bebas Neue", system-ui, cursive;
+}
+
+/* easy / classic / time are covered by defaults or above */
+.classic { composes: themeDefault; }
+.easy { composes: themeDefault; }
+.time { /* vars set in registry map – already covered in page */ }

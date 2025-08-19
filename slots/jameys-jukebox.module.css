@@ -1,0 +1,254 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Press+Start+2P&display=swap");
+
+/* ========== THEME TOKENS ========== */
+.root{
+--juk-accent:#26ffd0;
+--juk-accent-2:#ff7ad6;
+--juk-bezel:rgba(38,255,208,.28);
+--juk-bezel-strong:rgba(38,255,208,.42);
+--juk-sub:#a9ffe9;
+--juk-text:#eafff7;
+--juk-bg-1:#05060b;
+--juk-bg-2:#0c0f1a;
+--grid-line:rgba(38,255,208,.22);
+--grid-glow:rgba(255,122,214,.18);
+--glow:0 0 18px rgba(38,255,208,.55),0 0 36px rgba(38,255,208,.35),0 0 64px rgba(255,122,214,.25);
+
+/* NEW: SFX hooks (swap to your audio files) */
+--sfx-spin: "/sfx/jukebox/v2-spin.mp3";
+--sfx-stop: "/sfx/jukebox/v2-stop.mp3";
+--sfx-win: "/sfx/jukebox/v2-win.mp3";
+}
+
+/* Make the CSS vars accessible to JS importers (optional) */
+:export{
+sfxSpin: var(--sfx-spin);
+sfxStop: var(--sfx-stop);
+sfxWin: var(--sfx-win);
+}
+
+/* ========== BACKDROP + FLOOR ========== */
+.page{
+font-family:"Orbitron",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+color:var(--juk-text);
+min-height:100vh;
+background:
+radial-gradient(120% 90% at 50% 0%, rgba(255,122,214,.08), transparent 60%),
+radial-gradient(120% 100% at 50% 100%, rgba(38,255,208,.06), transparent 60%),
+linear-gradient(180deg, var(--juk-bg-1), var(--juk-bg-2));
+position:relative;
+overflow-x:hidden;
+}
+.page::after{
+content:"";
+position:fixed; inset:0; pointer-events:none;
+background:repeating-linear-gradient(to bottom, rgba(255,255,255,.04), rgba(255,255,255,.04) 1px, transparent 2px, transparent 3px);
+mix-blend-mode:soft-light; opacity:.25;
+}
+.page::before{
+content:"";
+position:fixed; left:0; right:0; bottom:0; height:44vh;
+background:
+linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.35)),
+repeating-linear-gradient(to right, var(--grid-line) 0 2px, transparent 2px 40px),
+repeating-linear-gradient(to top, var(--grid-glow) 0 2px, transparent 2px 36px);
+filter:drop-shadow(0 0 14px rgba(38,255,208,.25));
+transform:perspective(600px) rotateX(60deg) translateY(14vh) scale(1.25);
+transform-origin:bottom center;
+z-index:0;
+}
+
+/* ========== WRAP / HERO ========== */
+.wrap{ width:min(1400px, 98vw); margin:0 auto; padding:24px 12px 60px; position:relative; z-index:1; }
+.hero{ text-align:center; margin:6px 0 12px; }
+.title{
+font-size:clamp(38px,6.6vw,86px); font-weight:900; letter-spacing:.06em; color:#fff;
+text-shadow:0 0 16px var(--juk-accent),0 0 28px var(--juk-accent),0 0 48px rgba(255,122,214,.45);
+animation:neonPulse 3.4s ease-in-out infinite;
+}
+.sub{ margin-top:6px; color:var(--juk-sub); font-weight:800; letter-spacing:.08em; text-transform:uppercase; opacity:.95; }
+.ctaRow{ display:flex; gap:10px; justify-content:center; margin-top:12px; flex-wrap:wrap; }
+
+.btn,
+.btnGhost{
+display:inline-flex; align-items:center; gap:8px;
+padding:10px 14px; border-radius:12px; font-weight:800; letter-spacing:.06em;
+text-transform:uppercase; text-decoration:none; transition:transform .08s ease, box-shadow .2s ease, background .2s ease;
+backdrop-filter:blur(2px);
+}
+.btn{ color:#05120f; background:linear-gradient(180deg,#6affdf,#1cffb9); border:1px solid var(--juk-bezel-strong); box-shadow:var(--glow); }
+.btn:hover{ transform:translateY(-1px); }
+.btnGhost{ color:#bfffee; background:rgba(10,18,22,.6); border:1px solid var(--juk-bezel); box-shadow:inset 0 0 16px rgba(38,255,208,.18); }
+.btnGhost:hover{ transform:translateY(-1px); box-shadow:0 0 22px rgba(38,255,208,.28); }
+
+/* ========== CABINET (FULL WIDTH) ========== */
+.cabinetZone{ display:grid; justify-content:center; margin:14px auto 0; gap:18px; min-height:70vh; width:100%; }
+.cabinet{
+--pad:18px;
+width: min(100vw - 16px, 1000px);
+margin: 0 auto; padding: var(--pad);
+border-radius: 20px; border: 1px solid var(--juk-bezel);
+background:
+radial-gradient(140% 120% at 50% 0%, rgba(255,255,255,.04), rgba(0,0,0,.6)),
+linear-gradient(180deg, rgba(10,12,18,.6), rgba(0,0,0,.88));
+box-shadow:
+inset 0 0 34px var(--juk-bezel),
+0 0 26px rgba(0,0,0,.45),
+0 0 90px rgba(38,255,208,.22),
+0 0 120px rgba(255,122,214,.18);
+position:relative; animation:neonBreath 4.6s ease-in-out infinite;
+}
+
+/* Floating music notes overlay */
+.cabinet .notes{
+position:absolute; inset:0; pointer-events:none; overflow:hidden; z-index:2;
+}
+.cabinet .notes::before,
+.cabinet .notes::after{
+content:"♪ ♪ ♫ ♪ ♫ ♪ ♫ ♪"; position:absolute; left:-10%; right:-10%;
+font-size:clamp(16px, 2.8vw, 28px); color:rgba(38,255,208,.15);
+text-shadow:0 0 18px rgba(38,255,208,.25), 0 0 26px rgba(255,122,214,.15);
+animation:floatNotes 14s linear infinite;
+}
+.cabinet .notes::after{
+content:"♫ ♫ ♪ ♫ ♪ ♫ ♪"; top:20%; color:rgba(255,122,214,.16); animation-duration:18s; animation-direction:reverse;
+}
+
+/* ========== RULES / FOOTER ========== */
+.rules{
+max-width: min(1400px, 98vw);
+margin: 0 auto; padding: 16px 18px;
+border-radius: 16px; border: 1px solid var(--juk-bezel);
+background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.82));
+box-shadow: inset 0 0 18px var(--juk-bezel);
+}
+.rules h3{ margin:0 0 6px; color:var(--juk-sub); }
+.rules .soft{ color:var(--juk-sub); opacity:.85; }
+.footer{ display:grid; place-items:center; padding:16px 0 28px; }
+
+/* ========== NEON SLOT INNER (grid layout) ========== */
+.global (.neonSlot){ --gap: clamp(8px, 1.2vw, 16px); width:100%; }
+.global (.neonSlot .reels){
+display:grid; grid-template-columns: repeat(var(--reels, 5), 1fr);
+gap: var(--gap);
+}
+.global (.neonSlot .reel){
+display:grid; grid-auto-rows:minmax(0, 1fr); gap: var(--gap);
+position: relative; overflow: hidden;
+border: 1px solid rgba(38,255,208,.25); border-radius: 10px;
+box-shadow: inset 0 0 10px rgba(38,255,208,.08);
+background: rgba(0,0,0,.35);
+}
+.global (.neonSlot .cell){
+aspect-ratio:1/1;
+border-radius:12px;
+border:1px solid rgba(38,255,208,.28);
+background:
+radial-gradient(140% 120% at 50% 0%, rgba(255,255,255,.07), rgba(0,0,0,.35)),
+linear-gradient(180deg, rgba(5,10,12,.65), rgba(0,0,0,.85));
+box-shadow: inset 0 0 10px rgba(38,255,208,.12), 0 0 10px rgba(255,122,214,.12);
+}
+.global (.neonSlot .symbol){
+font-size: clamp(18px, 3vw, 36px);
+text-shadow: 0 0 10px rgba(38,255,208,.35), 0 0 24px rgba(255,122,214,.25);
+filter: saturate(1.2);
+}
+
+/* ========== NEW SPIN ANIMATION ========== */
+/* Turntable sweep: subtle hue sweep + groove wobble + brief motion blur */
+.global (.neonSlot .strip){ will-change: transform, filter; transition-property: transform, filter; }
+.global (.neonSlot .strip.spinning){
+animation:
+grooveWobble 420ms ease-in-out infinite,
+hueSweep 2.2s linear infinite;
+filter: brightness(1.05) saturate(1.08) drop-shadow(0 0 6px rgba(38,255,208,.15));
+}
+@keyframes grooveWobble{
+0%,100%{ transform: translateY(var(--ty, 0)) }
+25%{ transform: translateY(calc(var(--ty, 0) + .9px)) }
+75%{ transform: translateY(calc(var(--ty, 0) - .9px)) }
+}
+@keyframes hueSweep{
+0%{ filter: hue-rotate(0deg) }
+50%{ filter: hue-rotate(10deg) }
+100%{ filter: hue-rotate(0deg) }
+}
+
+/* On stop, pop the winning cells a bit */
+.global (.neonSlot .cell.win){
+animation: winFlash .75s ease-in-out 2;
+border-color:rgba(255,122,214,.6);
+box-shadow: inset 0 0 16px rgba(255,122,214,.35), 0 0 18px rgba(255,122,214,.35);
+}
+
+/* ========== SPIN BUTTON (vinyl record) ========== */
+.global (.neonSlot button){
+--btn-size: clamp(56px, 8vw, 76px);
+width: var(--btn-size); height: var(--btn-size);
+border-radius:999px; border:2px solid var(--juk-bezel-strong);
+background:
+radial-gradient(circle at 60% 30%, rgba(255,255,255,.22), rgba(255,255,255,0) 40%),
+conic-gradient(from 0deg, rgba(38,255,208,.3), rgba(255,122,214,.35), rgba(38,255,208,.3), rgba(255,122,214,.35), rgba(38,255,208,.3));
+color:#00140f; box-shadow:var(--glow); font-weight:900; letter-spacing:.08em; text-transform:uppercase; position:relative; overflow:hidden;
+}
+.global (.neonSlot button:hover){ transform:translateY(-1px); box-shadow:0 0 28px rgba(38,255,208,.45); }
+.global (.neonSlot button::after){
+content:""; position:absolute; inset:0;
+background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.24) 50%, transparent 100%);
+transform:translateX(-120%); animation:shine 2.4s ease-in-out infinite; pointer-events:none;
+}
+
+/* ========== KEYFRAMES ========== */
+@keyframes neonPulse{
+0%,100%{ text-shadow:var(--glow); }
+50%{ text-shadow:0 0 10px rgba(38,255,208,.45),0 0 22px rgba(38,255,208,.25),0 0 44px rgba(255,122,214,.18); }
+}
+@keyframes neonBreath{
+0%,100%{
+box-shadow: inset 0 0 34px var(--juk-bezel), 0 0 26px rgba(0,0,0,.45), 0 0 90px rgba(38,255,208,.22), 0 0 120px rgba(255,122,214,.18);
+}
+50%{
+box-shadow: inset 0 0 44px var(--juk-bezel-strong), 0 0 26px rgba(0,0,0,.45), 0 0 120px rgba(38,255,208,.28), 0 0 140px rgba(255,122,214,.22);
+}
+}
+@keyframes shine{
+0%{ transform:translateX(-120%); }
+60%,100%{ transform:translateX(120%); }
+}
+@keyframes winFlash{
+0%,100%{ filter: brightness(1); }
+50% { filter: brightness(1.35); }
+}
+@keyframes floatNotes{
+0%{ transform:translateY(30%) translateX(-8%); opacity:.0; }
+10%{ opacity:.45; }
+50%{ transform:translateY(-10%) translateX(8%); opacity:.35; }
+90%{ opacity:.45; }
+100%{ transform:translateY(-40%) translateX(12%); opacity:.0; }
+}
+
+/* ───────────── Bigger Cabinet / Reels for Jamey’s Jukebox ───────────── */
+
+/* Enlarge the entire cabinet frame */
+.cabinet {
+transform: scale(1.15); /* scale up by 15% */
+transform-origin: center top; /* grow downward from top center */
+}
+
+/* Increase the base cell size (affects reels & symbols) */
+.global (.neonSlot) {
+--cell: 110px; /* was ~72–88px, now much larger */
+}
+
+/* Make the reels take more vertical space */
+.global (.neonSlot .reels) {
+gap: 14px; /* slightly more space between reels */
+}
+
+/* Bigger symbols inside cells */
+.global (.neonSlot .cell) {
+font-size: calc(var(--cell) * 0.6); /* bump symbol size relative to cell */
+}
+
+
